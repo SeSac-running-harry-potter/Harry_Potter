@@ -1,0 +1,239 @@
+/* 폰트 css */
+@font-face {
+    font-family: 'JeonjuSunR';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202@1.0/JeonjuSunR.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 메인 안 Lorem 글씨체 */
+@font-face {
+    font-family: 'DeogonPrincessClassic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/DeogonPrincessClassic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 타이틀 글씨체 */
+@font-face {
+    font-family: 'OKCHAN';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/OKCHAN.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SDSamliphopangche_Outline';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Outline.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 페이지 전체 css */
+html, body { height: 100%; margin: 0; }
+section { width: 100%; height: 100%; position: relative; display: flex; justify-content: center; align-items: center; }
+
+/* 각 세션의 기본 틀 css */
+.header{
+    font-family: 'OKCHAN';
+    font-size: 90px;
+    text-align: center;
+    width: 100%;
+    height: min-content;
+   
+}
+.head{
+    border:  3px solid rgb(39, 37, 37);
+    width: 95%;
+    height: min-content;
+    display: flex;
+    
+}
+ .head1{
+    font-family: 'JeonjuSunR';
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: aliceblue;
+    background-color: rgb(40, 38, 38);
+    height: min-content;
+    width: 15%;
+}
+.head2{
+    font-size: 1.5vw;
+    width: 80%;
+    font-family: 'DeogonPrincessClassic';
+}
+.main{
+    margin-top: 15px;
+    border:  6px double black;
+    border-style: double;
+    width: 95%;
+    height: 74%;
+}
+.footer{
+    font-family: 'JeonjuSunR';
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer1{
+    font-family: 'SDSamliphopangche_Outline';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.807);
+    width: 15%;
+    color: aliceblue;
+}
+.footer2{
+    font-family: 'DeogonPrincessClassic';
+    width: 35%;
+}
+
+
+/* 각 section별 내용 css */
+.section01 {
+    /* 종이질감 배경 이미지 주소  */
+    background-image: url(https://i.pinimg.com/564x/55/d1/83/55d183f50eac42fc594d684cb205243e.jpg);
+    font-size: 30px;
+    text-align: center; 
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+}
+.section01_behind{
+    font-family: 'OKCHAN';
+    font-size: 90px;
+}
+
+.section02 { 
+    background-image: url(https://i.pinimg.com/564x/55/d1/83/55d183f50eac42fc594d684cb205243e.jpg);
+    font-size: 30px;
+    text-align: center; 
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+}
+
+.section02_boy{
+    margin: 10px;
+    font-family: 'JeonjuSunR';
+    font-size: 5vw;
+    font-weight: 800;
+}
+.section02_img{
+    border:  6px double black;
+    border-style: double;
+    margin: 0px 40px 0px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 150px;
+    box-shadow: 3px 3px 3px 3px rgb(66, 65, 65) inset;
+}
+
+.section02_mainbottom{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: min-content;
+    /* justify-content: space-around; */
+}
+.section02_mainbottom1{
+    font-family: 'DeogonPrincessClassic';
+    width: 25%;
+    font-size: 22px;
+
+}
+.section02_mainbottom2{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    
+}
+.section02_H{
+     font-family: 'OKCHAN';
+     font-size: 5vw;
+}
+.section02_H2{
+    font-size: 1.5vw;
+    font-family: 'DeogonPrincessClassic';
+
+}
+
+.section02_mainbottom4{
+    margin: 0px 40px 0px 40px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: min-content;   
+}
+.section02_bottom4{
+    margin-top: 10px;
+    font-family: 'DeogonPrincessClassic';
+}
+.section02_mainfooter{
+    display: flex;
+
+}
+.section02_mainfooter1{
+    width: 30%;
+    margin:10px 30px 0px 30px;
+    font-family: 'DeogonPrincessClassic';
+    font-size: 1vw;
+}
+.section02_mainfooter2{
+    font-family: 'OKCHAN';
+    font-size: 90px;
+
+}
+
+.section03 { 
+    background-image: url(https://i.pinimg.com/564x/55/d1/83/55d183f50eac42fc594d684cb205243e.jpg);
+    font-size: 30px;
+    text-align: center; 
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+}
+
+.section04 { 
+    background-image: url(https://i.pinimg.com/564x/55/d1/83/55d183f50eac42fc594d684cb205243e.jpg);
+    font-size: 30px;
+    text-align: center; 
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.section05 { 
+    background-image: url(https://i.pinimg.com/564x/55/d1/83/55d183f50eac42fc594d684cb205243e.jpg);
+    font-size: 30px;
+    text-align: center; 
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+}
+
+.section06 { 
+    background-image: url(https://i.pinimg.com/564x/55/d1/83/55d183f50eac42fc594d684cb205243e.jpg);
+    font-size: 30px;
+    text-align: center; 
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+}
+
+.section07 { 
+    background-image: url(https://i.pinimg.com/564x/55/d1/83/55d183f50eac42fc594d684cb205243e.jpg);
+    font-size: 30px;
+    text-align: center; 
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
