@@ -3,9 +3,273 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Subpage</title>
+    <title>Document</title>
   </head>
   <body>
-    <h1>subpage</h1>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      section {
+        width: 100vw;
+        height: 100vh;
+      }
+
+      #domitory {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+      .header {
+        position: absolute;
+        /* top: 15vh; */
+        left: 50%;
+        font-size: 2rem;
+        transform: translate(-50%, -50%);
+        color: #eaeaea;
+      }
+      .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        z-index: 1;
+        /* background-color: #eaeaea; */
+      }
+
+      .card {
+        width: 300px;
+        height: 400px;
+        background-color: #eaeaea;
+        /* opacity: 0.5; */
+        transition: opacity 0.3s ease;
+        cursor: pointer;
+        border: 1px solid red;
+        transition: transform 1s ease, opacity 0.3s ease;
+      }
+
+      .card:hover {
+        transform: scale(1.1);
+      }
+
+      .card1 {
+        background-image: url(../image/subpage_그리핀도르.png);
+        /* width: 20%; */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
+        z-index: 999;
+      }
+
+      .modal {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80vw;
+        height: 60vh;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        display: none;
+        transition: transform 2s ease, opacity 0.3s ease;
+      }
+
+      .card-modal {
+        width: 100%;
+        height: 100%;
+        /* box-sizing: border-box; */
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform-origin: left center;
+        transform-style: preserve-3d;
+        /* transform: rotateY(0deg); */
+
+        transition: transform 2s ease, opacity 0.3s ease;
+      }
+
+      .card-modal:hover {
+        /* transform: rotateY(-70deg); */
+      }
+
+      .card-modal-content {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 24px;
+        /* z-index: 1; */
+      }
+
+      .madal-container {
+        background-color: aqua;
+        margin: 5px;
+      }
+
+      .madal-container-inner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        background-color: blue;
+        width: 80vw;
+      }
+
+      .madal-left {
+        width: 35vw;
+        background-color: brown;
+      }
+
+      .madal-right {
+        width: 35vw;
+        background-color: rgb(63, 165, 42);
+        font-size: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      img {
+        /* width: 100%; */
+      }
+      /* .card-modal-content-left {
+        position: absolute;
+        width: 40vw;
+
+        height: 400px;
+        top: 5%;
+        left: 5%;
+        transform: translate(-5%, -5%);
+        background-color: aquamarine;
+        background-image: url(../image/subpage_그리핀도르_기숙사.jpg);
+
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      } */
+
+      img {
+        width: 100%;
+        /* height: 100%; */
+      }
+      .modal.active {
+        display: block;
+      }
+
+      .modal-header {
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px;
+      }
+
+      .modal-close {
+        cursor: pointer;
+        transition: transform 0.6s ease;
+        z-index: 2;
+      }
+    </style>
+    <section>
+      <div class="header">기숙사</div>
+      <video
+        id="domitory"
+        src="../image/기숙사그레이트홀.mp4"
+        alt="그리핀도르"
+        autoplay
+        loop
+        muted
+      ></video>
+      <div class="container">
+        <div class="card card1" onclick="openModal()">Div 1</div>
+        <div class="card card2">Div 2</div>
+        <div class="card card3">Div 3</div>
+        <div class="card card4">Div 4</div>
+      </div>
+
+      <div class="modal" id="modal">
+        <div class="modal-header">
+          <span class="modal-close" onclick="closeModal()">X</span>
+        </div>
+        <div class="card-modal">
+          <div class="card-modal-content">
+            <div class="madal-container">
+              <span style="padding: 10px">그리핀도르</span>
+              <div class="madal-container-inner">
+                <div class="madal-left">
+                  <img
+                    id="domitory"
+                    src="../image/subpage_그리핀도르_기숙사.jpg"
+                    alt="그리핀도르"
+                  />
+                </div>
+                <div class="madal-left">second</div>
+                <div class="madal-right">
+                  right
+                  <div class="madal-right-content content1">
+                    content1content1
+                  </div>
+                  <div class="madal-right-content content2">
+                    content1content1content1
+                  </div>
+                  <div class="madal-right-content content3">
+                    content1content1co ntent1con tent1content1
+                  </div>
+                  <div class="madal-right-content content4">content1</div>
+                  <div class="madal-right-content content5">
+                    content1content1content1
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="card-modal-content-left">
+            <img src="../image/subpage_그리핀도르_기숙사.jpg" alt="" />
+          </div> -->
+          <!-- <div class="card-modal-content-right">
+            <img src="../image/subpage_그리핀도르_기숙사.jpg" alt="" />
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function openModal() {
+        const modal = document.getElementById("modal");
+        modal.classList.add("active");
+      }
+
+      function closeModal() {
+        const modal = document.getElementById("modal");
+        modal.classList.remove("active");
+      }
+
+      window.onclick = function (event) {
+        const modal = document.getElementById("modal");
+        if (event.target === modal) {
+          closeModal();
+        }
+      };
+    </script>
   </body>
 </html>
