@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>2페이지 책자 양식</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-size: 20px;
+        height: 60px;
+      }
+      .page {
+        width: 50%;
+        height: 100vh;
+        float: left;
+        box-sizing: border-box;
+        padding: 20px;
+        border: 1px solid #ccc;
+      }
+      .left-page {
+        background-color: #f9f9f9;
+      }
+      .right-page {
+        background-color: #fff;
+      }
+      .page-title {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+      .circle-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1px;
+      }
+      .circle {
+        width: 10vw;
+        height: 10vw;
+        background: linear-gradient(45deg, #f8f001, #e815bb);
+        border-radius: 50%;
+        margin: 11px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      /* .circle_container:hover {
+        transform: scale(1.1);
+        transition: 0.7s;
+        font-weight: 700;
+        cursor: pointer;
+      } */
+      .circle_container:active {
+        transform: scale(1.1);
+        /* transition: 1.5s; */
+        font-weight: 700;
+        cursor: pointer;
+      }
+      /* .circle1:active {
+        background-color: gray;
+      } */
+      .circle1 {
+        background-image: url("../image/위즐리.jpeg");
+        width: 9vw;
+        height: 9vw;
+        border-radius: 50%;
+        z-index: 1;
+        background-repeat: no-repeat;
+        /* background-color: white; */
+        background-size: contain;
+        /* border: 10px solid white; */
+        margin: auto;
+        left: 0;
+        right: 0;
+        /* top: 0; */
+        /* bottom: 0; */
+        position: relative;
+        background-size: cover;
+        /* background-position: center; */
+        border: 2px solid white;
+      }
+      .circle2 {
+        background-image: url("../image/해리포터.jpeg");
+        width: 9vw;
+        height: 9vw;
+        border-radius: 50%;
+        z-index: 1;
+        background-repeat: no-repeat;
+        /* background-color: white; */
+        background-size: contain;
+        /* border: 10px solid white; */
+        margin: auto;
+        /* left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0; */
+        position: static;
+        background-size: cover;
+        /* background-position: center; */
+        border: 2px solid white;
+      }
+      .circle3 {
+        background-image: url("../image/헤르미온느.jpeg");
+        width: 9vw;
+        height: 9vw;
+        border-radius: 50%;
+        z-index: 1;
+        background-repeat: no-repeat;
+        /* background-color: white; */
+        background-size: contain;
+        /* border: 10px solid white; */
+        margin: auto;
+        /* left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0; */
+        position: static;
+        background-size: cover;
+        /* background-position: center; */
+        /* background-color: white; */
+        border: 2px solid white;
+      }
+      .circle4 {
+        background-image: url("../image/덤블도어.jpeg");
+        width: 9vw;
+        height: 9vw;
+        border-radius: 50%;
+        z-index: 1;
+        background-repeat: no-repeat;
+        /* background-color: white; */
+        background-size: contain;
+        /* border: 10px solid white; */
+        margin: auto;
+        /* left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0; */
+        position: static;
+        background-size: cover;
+        /* background-position: center; */
+        background-color: white;
+        border: 2px solid white;
+      }
+      .person_text {
+        font-size: 17px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>그리핀도르</h1>
+    <div class="page left-page">
+      <h1 class="page-title"></h1>
+      <!-- 왼쪽 페이지 내용을 추가 -->
+      <img
+        src="../image/4228959 (1).jpg"
+        alt="그리핀도르 기숙사"
+        width="670px"
+        height="670px"
+      />
+    </div>
+    <div class="page right-page">
+      <h1 class="page-title">#기숙사 인물</h1>
+      <!-- 오른쪽 페이지 내용을 추가 -->
+      <div class="circle-list">
+        <div class="circle_container">
+          <div class="circle">
+            <div class="circle1"></div>
+          </div>
+          <p class="person_text">론 위즐리</p>
+        </div>
+        <div class="circle_container">
+          <div class="circle">
+            <div class="circle2"></div>
+          </div>
+          <p class="person_text">해리포터</p>
+        </div>
+        <div class="circle_container">
+          <div class="circle">
+            <div class="circle3"></div>
+          </div>
+          <p class="person_text">헤르미온느 그레인저</p>
+        </div>
+        <div class="circle_container">
+          <div class="circle">
+            <div class="circle4"></div>
+          </div>
+          <p class="person_text">알버스 덤블도어</p>
+        </div>
+      </div>
+      <hr />
+      <p><b>#모토</b>: 용감하고 대담한 자를 위한 기숙사</p>
+      <p><b>#창립자</b>: 고드릭 그리핀도르 창립</p>
+      <p>
+        <b>#이념</b>: "그 이름에 걸맞은 용기를 보여주는 아이들은 누구나 다
+        가르치도록 하세."
+      </p>
+      <p><b>#상장 동물</b>: 사자</p>
+      <p><b>#상징 색</b>: 붉은색, 금색</p>
+      <p><b>#상징 원소</b>: 불</p>
+      <p><b>#특성</b>: 용기,대담함, 기사도 정신</p>
+    </div>
+  </body>
+</html>
