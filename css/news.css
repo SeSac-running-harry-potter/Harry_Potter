@@ -1,199 +1,205 @@
 /* 폰트 css */
 @font-face {
-    font-family: 'JeonjuSunR';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202@1.0/JeonjuSunR.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "JeonjuSunR";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202@1.0/JeonjuSunR.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 /* 메인 안 Lorem 글씨체 */
 @font-face {
-    font-family: 'DeogonPrincessClassic';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/DeogonPrincessClassic.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "DeogonPrincessClassic";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/DeogonPrincessClassic.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
 /* 타이틀 글씨체 */
 @font-face {
-    font-family: 'OKCHAN';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/OKCHAN.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "OKCHAN";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/OKCHAN.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'SDSamliphopangche_Outline';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Outline.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "SDSamliphopangche_Outline";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Outline.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
-html, body { height: 100%; margin: 0; }
-#container { height: 100%; position: relative; overflow: hidden; }
-section { width: 100%; height: 100%; position: absolute; }
-.section01 { 
-    font-family: 'OKCHAN';
-    height: 100%; 
-    background-size:contain;
-    background-image: url(https://i.pinimg.com/564x/55/d1/83/55d183f50eac42fc594d684cb205243e.jpg);
-    font-size:8vw;
-    text-align: center; 
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+html,
+body {
+  height: 100%;
+  margin: 0;
 }
-.BehindStory{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    position: relative;
-    border: 1vw double black;
+#container {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+section {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.section01,
+.section08 {
+  font-family: "OKCHAN";
+  height: 100%;
+  background-size: contain;
+  background-image: url(https://i.pinimg.com/564x/55/d1/83/55d183f50eac42fc594d684cb205243e.jpg);
+  font-size: 8vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.BehindStory {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  position: relative;
+  border: 1vw double black;
 }
 .section02 {
-    background-image: url(https://i.pinimg.com/564x/55/d1/83/55d183f50eac42fc594d684cb205243e.jpg);
-    font-size: 30px;
-    text-align: center; 
-    display: flex; 
-    align-items: center;
-    flex-direction: column;
-    
-    }
+  background-image: url(https://i.pinimg.com/564x/55/d1/83/55d183f50eac42fc594d684cb205243e.jpg);
+  font-size: 30px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 
-    .section02_header{
-        font-family: 'OKCHAN';
-        font-size: 5vw;
-        text-align: center;
-        width: 100%;
-        height: min-content;
-        /* background-color: aqua; */
-    }
-    .section02_head{
-        border:  3px solid rgb(39, 37, 37);
-        width: 95%;
-        height: min-content;
-        display: flex;
-        
-    }
-     .section02_head1{
-        font-family: 'JeonjuSunR';
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        color: aliceblue;
-        background-color: rgb(40, 38, 38);
-        height: min-content;
-        width: 35%;
-    }
-    .section02_a1{
-        font-size: 0.5vw;
-        visibility: visible;
-    }
-    .section02_a2{
-        font-size: 1vw;
-    }
-    .section02_a3{
-        font-size: 1.3vw;
-        
-    }
-    .section02_head2{
-        width: 80%;
-        font-family: 'DeogonPrincessClassic';
-        font-size: 1.5vw;
-    }
-    .section02_main{
-        margin-top: 15px;
-        border:  6px double black;
-        border-style: double;
-        width: 95%;
-        height: 74%;
-    }
-    .section02_maintop{
-        font-family: 'JeonjuSunR';
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .section02_maintop1{
-        font-family: 'SDSamliphopangche_Outline';
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 5px;
-        background-color: rgba(0, 0, 0, 0.807);
-        width: 15%;
-        color: aliceblue;
-        font-size: 2vw;
-    }
-    .section02_maintop2{
-        font-family: 'DeogonPrincessClassic';
-        width: 39%;
-        font-size: 1vw;
-    }
-    .section02_boy{
-        /* margin: 5px; */
-        font-family: 'OKCHAN';
-        font-size: 90px;
-        font-weight: 800;
-        font-size: 3.5vw;
-    }
-    .img{
-        border:  6px double black;
-        border-style: double;
-        margin: 0px 40px 0px 40px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        font-size: 150px;
-        box-shadow: 3px 3px 3px 3px rgb(66, 65, 65) inset;
-    }
-    
-    .section02_mainbottom{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        height: min-content;
-        justify-content: center;
-        border-radius: 2px solid black;
-        
-    }
-    .section02_mainbottom1{
-        display: flex;
-        flex-direction: column;
-       align-items: center;
-        font-size: 2vw;
-        font-family: 'DeogonPrincessClassic';
-        width: 40%;
-       
-    
-    }
-    .section02_mainbottom2{
-        font-family: 'DeogonPrincessClassic';
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        font-size: 2vw;
-        width: 25%;
-        
-    }
-    
-    
-    
-    .section02_mainfooter{
-        display: flex;
-    
-    }
-    .section02_mainfooter1{
-        width: 30%;
-        margin:10px 30px 0px 30px;
-        font-family: 'DeogonPrincessClassic';
-        font-size: 22px;
-    }
-    .section02_mainfooter2{
-        font-family: 'OKCHAN';
-        font-size: 90px;
-    
-    }
-    
+.section02_header {
+  font-family: "OKCHAN";
+  font-size: 5vw;
+  text-align: center;
+  width: 100%;
+  height: min-content;
+  /* background-color: aqua; */
+}
+.section02_head {
+  border: 3px solid rgb(39, 37, 37);
+  width: 95%;
+  height: min-content;
+  display: flex;
+}
+.section02_head1 {
+  font-family: "JeonjuSunR";
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: aliceblue;
+  background-color: rgb(40, 38, 38);
+  height: min-content;
+  width: 35%;
+}
+.section02_a1 {
+  font-size: 0.5vw;
+  visibility: visible;
+}
+.section02_a2 {
+  font-size: 1vw;
+}
+.section02_a3 {
+  font-size: 1.3vw;
+}
+.section02_head2 {
+  width: 80%;
+  font-family: "DeogonPrincessClassic";
+  font-size: 1.5vw;
+}
+.section02_main {
+  margin-top: 15px;
+  border: 6px double black;
+  border-style: double;
+  width: 95%;
+  height: 74%;
+}
+.section02_maintop {
+  font-family: "JeonjuSunR";
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.section02_maintop1 {
+  font-family: "SDSamliphopangche_Outline";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  background-color: rgba(0, 0, 0, 0.807);
+  width: 15%;
+  color: aliceblue;
+  font-size: 2vw;
+}
+.section02_maintop2 {
+  font-family: "DeogonPrincessClassic";
+  width: 39%;
+  font-size: 1vw;
+}
+.section02_boy {
+  /* margin: 5px; */
+  font-family: "OKCHAN";
+  font-size: 90px;
+  font-weight: 800;
+  font-size: 3.5vw;
+}
+.img {
+  border: 6px double black;
+  border-style: double;
+  margin: 0px 40px 0px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 150px;
+  box-shadow: 3px 3px 3px 3px rgb(66, 65, 65) inset;
+}
+
+.section02_mainbottom {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  height: min-content;
+  justify-content: center;
+  border-radius: 2px solid black;
+}
+.section02_mainbottom1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2vw;
+  font-family: "DeogonPrincessClassic";
+  width: 40%;
+}
+.section02_mainbottom2 {
+  font-family: "DeogonPrincessClassic";
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 2vw;
+  width: 25%;
+}
+
+.section02_mainfooter {
+  display: flex;
+}
+.section02_mainfooter1 {
+  width: 30%;
+  margin: 10px 30px 0px 30px;
+  font-family: "DeogonPrincessClassic";
+  font-size: 22px;
+}
+.section02_mainfooter2 {
+  font-family: "OKCHAN";
+  font-size: 90px;
+}
+
 /* .section03 { background: firebrick; } */
 /* ################################################################################################### */
 
@@ -252,74 +258,70 @@ section { width: 100%; height: 100%; position: absolute; }
 
 /* ################################################################################################### */
 
-.section04 { 
-    background-image: url(https://i.pinimg.com/564x/55/d1/83/55d183f50eac42fc594d684cb205243e.jpg);
-    font-size: 30px;
-    text-align: center; 
-    display: flex; 
-    align-items: center;
-    flex-direction: column;
+.section04 {
+  background-image: url(https://i.pinimg.com/564x/55/d1/83/55d183f50eac42fc594d684cb205243e.jpg);
+  font-size: 30px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
-.section04_boy{
-    /* margin: 5px; */
-    font-family: 'OKCHAN';
-    font-size: 90px;
-    font-weight: 800;
-    font-size: 2vw;
+.section04_boy {
+  /* margin: 5px; */
+  font-family: "OKCHAN";
+  font-size: 90px;
+  font-weight: 800;
+  font-size: 2vw;
 }
-.img{
-    border:  6px double black;
-    border-style: double;
-    margin: 0px 40px 0px 40px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    font-size: 150px;
-    box-shadow: 3px 3px 3px 3px rgb(66, 65, 65) inset;
+.img {
+  border: 6px double black;
+  border-style: double;
+  margin: 0px 40px 0px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 150px;
+  box-shadow: 3px 3px 3px 3px rgb(66, 65, 65) inset;
 }
 
-.section04_mainbottom{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    height: min-content;
-    
+.section04_mainbottom {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  height: min-content;
 }
-.section04_mainbottom1{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    font-family: 'DeogonPrincessClassic';
-    width: 48%;
-    font-size: 22px;
-
+.section04_mainbottom1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: "DeogonPrincessClassic";
+  width: 48%;
+  font-size: 22px;
 }
-.section04_mainbottom2{
-    font-family: 'DeogonPrincessClassic';
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 49%;
-    
+.section04_mainbottom2 {
+  font-family: "DeogonPrincessClassic";
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 49%;
 }
-.section04_mainbottom2_a1{
-    font-size: 2vw;
+.section04_mainbottom2_a1 {
+  font-size: 2vw;
 }
-.section04_mainbottom2_a2{
-    font-size: 2vw;
+.section04_mainbottom2_a2 {
+  font-size: 2vw;
 }
-.section04_mainbottom2_a3{
-    font-size: 2vw;
+.section04_mainbottom2_a3 {
+  font-size: 2vw;
 }
-.section04_mainbottom2_span1{
-    display: flex;
-    width: 100%;
-    height: 5vw;
-    border: 5px double black;
-    align-items: center;
-    justify-content: space-around;
-    margin: 1vw;
-    
+.section04_mainbottom2_span1 {
+  display: flex;
+  width: 100%;
+  height: 5vw;
+  border: 5px double black;
+  align-items: center;
+  justify-content: space-around;
+  margin: 1vw;
 }
 
 /* .section05 { background: seagreen; } */
@@ -382,55 +384,53 @@ section { width: 100%; height: 100%; position: absolute; }
   line-height: 200%;
   /* background-color: greenyellow; */
 }
-.section06 { 
-    background-image: url(https://i.pinimg.com/564x/55/d1/83/55d183f50eac42fc594d684cb205243e.jpg);
-    font-size: 30px;
-    text-align: center; 
-    display: flex; 
-    align-items: center;
-    flex-direction: column;
+.section06 {
+  background-image: url(https://i.pinimg.com/564x/55/d1/83/55d183f50eac42fc594d684cb205243e.jpg);
+  font-size: 30px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
-.section06_boy{
-    /* margin: 5px; */
-    font-family: 'OKCHAN';
-    font-size: 90px;
-    font-weight: 800;
-    font-size: 3vw;
+.section06_boy {
+  /* margin: 5px; */
+  font-family: "OKCHAN";
+  font-size: 90px;
+  font-weight: 800;
+  font-size: 3vw;
 }
-.section06_mainbottom{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    height: min-content;
-    justify-content: center;
-    
+.section06_mainbottom {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  height: min-content;
+  justify-content: center;
 }
 
-.section06_mainbottom1{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-    font-family: 'DeogonPrincessClassic';
-    font-size: 2vw;
-    width: 33%;
-   
+.section06_mainbottom1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  font-family: "DeogonPrincessClassic";
+  font-size: 2vw;
+  width: 33%;
 }
-.section06_mainbottom2{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    font-family: 'DeogonPrincessClassic';
-    font-size: 2vw;
-    width: 33%;
+.section06_mainbottom2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: "DeogonPrincessClassic";
+  font-size: 2vw;
+  width: 33%;
 }
-.section06_mainbottom3{
-    font-size: 2vw;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    font-family: 'DeogonPrincessClassic';
-    width: 33%;
+.section06_mainbottom3 {
+  font-size: 2vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: "DeogonPrincessClassic";
+  width: 33%;
 }
 
 /* .section07 { background: rgb(11, 22, 16); } */
@@ -500,12 +500,6 @@ section { width: 100%; height: 100%; position: absolute; }
   font-size: 1.7vw;
   color: gray;
 }
-.section08 { background: rgb(205, 172, 24); }
-.section09 { background: rgb(197, 195, 185); }
-.section10 { background: rgb(64, 54, 8); }
 
-
-@media all and(max-width: 768px){
-    
-	
+@media all and(max-width: 768px) {
 }
