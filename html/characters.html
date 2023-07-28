@@ -31,46 +31,42 @@
     <script defer src="../js/characters.js"></script>
   </head>
   <body>
-    <header></header>
-    <main style="background-color: #2f280b; height: 10000px; display: flex">
-      <section></section>
-      <aside style="background-color: #d3fe8a; width: 20%">
-        <div style="color: #c64219; font-weight: bold">
-          Character Introduction!
+    <!-- <div class="logo">
+      <img style="margin: 0" src="../image/pngwing.com.png" alt="" />
+    </div> -->
+    <div style="background-color: #2f280b; display: flex">
+      <div style="width: 20%; z-index: 1">
+        <div class="menus">
+          <div style="color: #d3fe89; font-size: 3vw; font-weight: bold">
+            Characters
+            <br />
+            Introduction!
+          </div>
+          <br />
+          <div style="display: flex; flex-direction: column">
+            <a href="#Harry" id="move ">Harry Potter</a>
+            <a href="#Hermione" id="move">Hermione Granger</a>
+            <a href="#Ron" id="move">Ron Weasley</a>
+            <a href="#Ginny" id="move">Ginny Weasley</a>
+            <a href="#Malfoy" id="move">Draco Malfoy</a>
+            <a href="#Voldemort" id="move">Lord Voldemort</a>
+            <a href="#Snape" id="move">Severus Snape</a>
+            <a href="#Dumbledore" id="move">Albus Dumbledore</a>
+            <a href="#Sirius" id="move">Sirius Black</a>
+            <a href="#McGonagall" id="move">Minerva McGonagall</a>
+            <a href="#Dobby" id="move">Dobby</a>
+          </div>
         </div>
-        <br />
-        <a href="#Harry" id="move">Harry Potter</a>
-        <br />
-        <a href="#Hermione" id="move">Hermione Granger</a>
-        <br />
-        <a href="#Rone" id="move">Ron Weasley</a>
-        <br />
-        <a href="#Ginny" id="move">Ginny Weasley</a>
-        <br />
-        <a href="#Malfoy" id="move">Draco Malfoy</a>
-        <br />
-        <a href="#Voldemort" id="move">Lord Voldemort</a>
-        <br />
-        <a href="#Snape" id="move">Severus Snape</a>
-        <br />
-        <a href="#Dumbledore" id="move">Albus Dumbledore</a>
-        <br />
-        <a href="#Sirius" id="move">Sirius Black</a>
-        <br />
-        <a href="#McGonagall" id="move">Minerva McGonagall</a>
-        <br />
-        <a href="#Dobby" id="move">Dobby</a>
-        <br />
-      </aside>
-      <section style="background-color: #4f4718; width: 80%">
-        <article class="main_characters">
+      </div>
+      <div style="width: 80%">
+        <div class="main_characters">
           <img
             src="../image/characters/삼총사3.jpg"
             alt="해리포터, 헤르미온느, 론"
             class="trio_img"
           />
-        </article>
-        <article class="Harry" id="Harry" style="background-color: #c64219">
+        </div>
+        <article class="Harry" id="Harry">
           <img src="../image/characters/해리1.jpg" alt="해리" />
           <div class="contents Harry-contents">
             <h2>해리 포터(Harry Potter)</h2>
@@ -79,6 +75,13 @@
               마법사입니다. 볼트모트와의 대결과 학교에서의 모험을 통해 성장해
               나갑니다.
             </p>
+            <div class="quotes Harry-quotes">
+              “You’re the weak one. And you’ll never know love, or friendship.
+              And I feel sorry for you.”
+              <br />
+              당신이야말로 가장 나약한 사람이야. 당신은 사랑도 모르고, 우정도
+              몰라. 그래서 참 가여워
+            </div>
           </div>
         </article>
         <article class="Hermione" id="Hermione">
@@ -99,11 +102,16 @@
               해리의 다른 친한 친구이자, 위즐리 가문의 막내 아들입니다. 용감하고
               유머 감각이 뛰어나며, 해리와 헤르미온느와 함께 모험을 겪습니다.
             </p>
+            <div class="quotes Ron-quotes">
+              “It’s not much, but it’s home.”
+              <br />
+              크지는 않아도 집이잖아.
+            </div>
           </div>
         </article>
         <!-- 단체 사진 -->
-        <article class="Ginny" id="Ginny" style="background-color: #c64219">
-          <img src="../image/characters/해리1.jpg" alt="지니" />
+        <article class="Ginny" id="Ginny">
+          <img src="../image/characters/지니1.jpg" alt="지니" />
           <div class="contents Ginny-contents">
             <h2>지니 위즐리(Ginny Weasley)</h2>
             <p>
@@ -113,10 +121,10 @@
             </p>
           </div>
         </article>
-        <article class="Malfoy" id="Malfoy" style="background-color: #c64219">
-          <img src="../image/characters/해리1.jpg" alt="말포이" />
+        <article class="Malfoy" id="Malfoy">
+          <img src="../image/characters/말포이1.jpg" alt="말포이" />
           <div class="contents Malfoy-contents">
-            <h2>드레이코 말포이(Draco Malfoy)</h2>
+            <h2 st>드레이코 말포이(Draco Malfoy)</h2>
             <p>
               위즐리 가문의 막내 딸로, 론 위즐리의 동생입니다. 해리의 로맨틱한
               관계의 중심에 서게 되며, 해리와 그의 친구들과 함께 모험을 겪으며
@@ -124,12 +132,8 @@
             </p>
           </div>
         </article>
-        <article
-          class="Voldemort"
-          id="Voldemort"
-          style="background-color: #c64219"
-        >
-          <img src="../image/characters/해리1.jpg" alt="볼드모트" />
+        <article class="Voldemort" id="Voldemort">
+          <img src="../image/characters/볼드모트1.jpg" alt="볼드모트" />
           <div class="contents Voldemort-contents">
             <h2>볼드모트(Lord Voldemort) / 톰 리들(Tom Riddle)</h2>
             <p>
@@ -138,8 +142,8 @@
             </p>
           </div>
         </article>
-        <article class="Snape" id="Snape" style="background-color: #c64219">
-          <img src="../image/characters/해리1.jpg" alt="스네이프" />
+        <article class="Snape" id="Snape">
+          <img src="../image/characters/스네이프1.jpg" alt="스네이프" />
           <div class="contents Snape-contents">
             <h2>세베루스 스네이프(Severus Snape)</h2>
             <p>
@@ -149,12 +153,8 @@
             </p>
           </div>
         </article>
-        <article
-          class="Dumbledore"
-          id="Dumbledore"
-          style="background-color: #c64219"
-        >
-          <img src="../image/characters/해리1.jpg" alt="덤블도어" />
+        <article class="Dumbledore" id="Dumbledore">
+          <img src="../image/characters/덤블도어1.jpg" alt="덤블도어" />
           <div class="contents Dumbledore-contents">
             <h2>알버스 덤블도어(Albus Dumbledore)</h2>
             <p>
@@ -164,8 +164,8 @@
             </p>
           </div>
         </article>
-        <article class="Sirius" id="Sirius" style="background-color: #c64219">
-          <img src="../image/characters/해리1.jpg" alt="시리우스" />
+        <article class="Sirius" id="Sirius">
+          <img src="../image/characters/시리우스1.jpg" alt="시리우스" />
           <div class="contents Sirius-contents">
             <h2>시리우스 블랙(Sirius Black)</h2>
             <p>
@@ -175,12 +175,8 @@
             </p>
           </div>
         </article>
-        <article
-          class="McGonagall"
-          id="McGonagall"
-          style="background-color: #c64219"
-        >
-          <img src="../image/characters/해리1.jpg" alt="맥고나걸" />
+        <article class="McGonagall" id="McGonagall">
+          <img src="../image/characters/맥고나걸1.jpg" alt="맥고나걸" />
           <div class="contents McGonagall-contents">
             <h2>미네르바 맥고나걸(Minerva McGonagall)</h2>
             <p>
@@ -190,8 +186,8 @@
             </p>
           </div>
         </article>
-        <article class="Dobby" id="Dobby" style="background-color: #c64219">
-          <img src="../image/characters/해리1.jpg" alt="도비" />
+        <article class="Dobby" id="Dobby">
+          <img src="../image/characters/도비1.jpg" alt="도비" />
           <div class="contents Dobby-contents">
             <h2>도비(Dobby)</h2>
             <p>
@@ -201,8 +197,7 @@
             </p>
           </div>
         </article>
-      </section>
-    </main>
-    <footer></footer>
+      </div>
+    </div>
   </body>
 </html>
