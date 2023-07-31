@@ -503,3 +503,21 @@ section {
 
 @media all and(max-width: 768px) {
 }
+
+.goMain{
+  top: 15vw;
+  right: 27vw;
+  position: absolute;
+  width: 2vw;
+  height: 2vw;
+  background-image: "../image/logo.png";
+  
+}
+
+.logoimg{
+  width: 8vw;
+}
+
+.logoimg:hover{
+  width: 9vw;
+}
