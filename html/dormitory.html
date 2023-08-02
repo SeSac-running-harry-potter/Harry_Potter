@@ -1,13 +1,758 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>dormitory</title>
-    <script src="../css/dormitory.css"></script>
-</head>
-<body>
-    
-</body>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <!-- swiper JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="../css/dormitory.css" />
+    <script defer src="../js/dormotory.js"></script>
+  </head>
+  <body>
+    <section>
+      <video
+        id="domitory"
+        src="../image/기숙사그레이트홀.mp4"
+        alt="그리핀도르"
+        autoplay
+        loop
+        muted
+      ></video>
+      <div class="logo_header">
+        <a href="../html/main.html">
+          <img src="../image/logo.png" alt="logo" class="logo" />
+        </a>
+      </div>
+      <div class="card_header">Dormitory</div>
+
+      <!-- Trigger/Open The Modal -->
+      <div class="cards_wrap">
+        <div class="card card1 modal-custom-button" href="#myModal1"></div>
+        <div class="card card2 modal-custom-button" href="#myModal2"></div>
+        <div class="card card3 modal-custom-button" href="#myModal3"></div>
+        <div class="card card4 modal-custom-button" href="#myModal4"></div>
+      </div>
+      <div class="footer">
+        <a
+          href="https://www.idrlabs.com/kr/hogwarts-house/test.php"
+          class="footer_font"
+        >
+          <span>
+            <img
+              src="../image/모자.png"
+              alt=""
+              style="width: 100px; align-items: center"
+            />Discover your hogwarts house
+          </span>
+        </a>
+      </div>
+    </section>
+    <!-- The Modal 1 -->
+    <div id="myModal1" class="modal-custom">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close-modal">×</span>
+
+          <!-- <h2>Modal Header</h2> -->
+        </div>
+        <div class="modal-body">
+          <div class="card-modal-content G">
+            <div class="card-modal-header">
+              <img
+                class="card-modal-header-img"
+                src="../image/dormitory_logo/sub_logo_G.png"
+                alt="그리핀도르깃발"
+              />
+            </div>
+
+            <div class="card-modal-inner">
+              <!-- modal left -->
+              <div class="card_section modal-left">
+                <div class="swiper swiper1">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide slid-1"></div>
+                    <div class="swiper-slide slid-2"></div>
+                    <div class="swiper-slide slid-3"></div>
+                    <div class="swiper-slide slid-4"></div>
+                  </div>
+                  <!-- 선택사항 -->
+                  <!-- If we need pagination -->
+                  <div class="swiper-pagination"></div>
+
+                  <!-- If we need navigation buttons -->
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+
+                  <!-- If we need scrollbar -->
+                  <div class="swiper-scrollbar"></div>
+                </div>
+              </div>
+              <!-- modal right -->
+              <div class="card_section modal-right">
+                <div class="modal-right-first-container">
+                  <div class="page-title-wrap">
+                    <h5 class="page-title">#CHARACTER</h5>
+                    <a href="./characters.html">
+                      <h5 class="page-title go">MORE ></h5>
+                    </a>
+                    <!-- 오른쪽 페이지 내용을 추가 -->
+                  </div>
+                  <div class="circle-list">
+                    <div class="circle_container">
+                      <!-- <a href="./characters.html#Harry"> -->
+                      <div class="circle">
+                        <div class="circle_line circle1"></div>
+                      </div>
+                      <!-- </a> -->
+                      <p class="person_text">Harry Potter</p>
+                    </div>
+                    <div class="circle_container">
+                      <!-- <a href="./characters.html#Hermione"> -->
+                      <div class="circle">
+                        <div class="circle_line circle2"></div>
+                      </div>
+                      <!-- </a> -->
+                      <p class="person_text">Hermione Granger</p>
+                    </div>
+                    <div class="circle_container">
+                      <!-- <a href="./characters.html#Rone"> -->
+                      <div class="circle">
+                        <div class="circle_line circle3"></div>
+                      </div>
+                      <!-- </a> -->
+                      <p class="person_text">Ron Weasle</p>
+                    </div>
+                    <div class="circle_container">
+                      <!-- <a href="./characters.html#Dumbledore" id="move"> -->
+                      <div class="circle">
+                        <div class="circle_line circle4"></div>
+                      </div>
+                      <!-- </a> -->
+                      <p class="person_text">Albus Dumbledore</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="modal-right-second-container">
+                  <h5 class="page-title">#EXPLAIN</h5>
+                  <div class="explain-btn-list">
+                    <div class="btn" id="btn selected" onclick="openAnswer(0)">
+                      #Motto
+                    </div>
+                    <div class="btn" id="btn" onclick="openAnswer(1)">
+                      #Founder
+                    </div>
+                    <div class="btn" id="btn" onclick="openAnswer(2)">
+                      #Ideology
+                    </div>
+                    <div class="btn" id="btn" onclick="openAnswer(3)">
+                      #Animal
+                    </div>
+                    <div class="btn" id="btn" onclick="openAnswer(4)">
+                      #Color
+                    </div>
+                    <div class="btn" id="btn" onclick="openAnswer(5)">
+                      #Element
+                    </div>
+                    <div class="btn" id="btn" onclick="openAnswer(6)">
+                      #Characteristics
+                    </div>
+                  </div>
+
+                  <div class="explain-container">
+                    <div class="explain-answer" id="answer">
+                      <div class="explain-answer-img-container">
+                        <div class="explain-answer-img img_1"></div>
+                      </div>
+                      <div class="explain-answer-img-text">
+                        A brave and bold man
+                      </div>
+                    </div>
+                    <div class="explain-answer" id="answer">
+                      <div class="explain-answer-img-container">
+                        <div class="explain-answer-img img_2"></div>
+                      </div>
+                      <p class="explain-answer-img-text">Godric Gryffindor</p>
+                    </div>
+                    <div class="explain-answer" id="answer">
+                      <!-- <div class="explain-answer-img-container">
+            <div class="explain-answer-img img_3"></div>
+          </div> -->
+                      <p class="explain-answer-img-text">
+                        "Any child who shows courage worthy of the name Try to
+                        teach."
+                      </p>
+                    </div>
+                    <div class="explain-answer" id="answer">
+                      <div class="explain-answer-img-container">
+                        <div class="explain-answer-img img_4"></div>
+                      </div>
+                      <p class="explain-answer-img-text">Lion</p>
+                    </div>
+                    <div class="explain-answer" id="answer">
+                      <div class="explain-answer-img-container">
+                        <div class="explain-answer-img img_5"></div>
+                      </div>
+                      <p class="explain-answer-img-text">Red and gold</p>
+                    </div>
+                    <div class="explain-answer" id="answer">
+                      <div class="explain-answer-img-container">
+                        <div class="explain-answer-img"></div>
+                      </div>
+                      <p class="explain-answer-img-text img_6">Fire</p>
+                    </div>
+                    <div class="explain-answer" id="answer">
+                      <div class="explain-answer-img-container">
+                        <div class="explain-answer-img img_7"></div>
+                      </div>
+                      <p class="explain-answer-img-text">
+                        Courage, boldness and chivalry
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="modal-footer">
+          <h3>Modal Footer</h3>
+        </div> -->
+      </div>
+    </div>
+
+    <!-- Trigger/Open The Modal -->
+    <!-- The Modal 2 -->
+    <div id="myModal2" class="modal-custom">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close-modal">×</span>
+          <!-- <h2>슬리데린</h2> -->
+        </div>
+        <div class="modal-body">
+          <div class="card-modal-content S">
+            <div class="card-modal-header">
+              <img
+                class="card-modal-header-img"
+                src="../image/dormitory_logo/sub_logo_S.png"
+                alt="슬리데린깃발"
+              />
+            </div>
+
+            <div class="card-modal-inner">
+              <!-- modal left -->
+              <div class="card_section modal-left">
+                <div class="swiper swiper1">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide slid-1 S"></div>
+                    <div class="swiper-slide slid-2 S"></div>
+                    <div class="swiper-slide slid-3 S"></div>
+                    <div class="swiper-slide slid-4 S"></div>
+                  </div>
+                  <!-- 선택사항 -->
+                  <!-- If we need pagination -->
+                  <div class="swiper-pagination"></div>
+
+                  <!-- If we need navigation buttons -->
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+
+                  <!-- If we need scrollbar -->
+                  <div class="swiper-scrollbar"></div>
+                </div>
+              </div>
+              <!-- modal right -->
+              <div class="card_section modal-right">
+                <div class="modal-right-first-container">
+                  <div class="page-title-wrap">
+                    <h5 class="page-title">#CHARACTER</h5>
+                    <a href="./characters.html">
+                      <h5 class="page-title go">MORE ></h5>
+                    </a>
+                    <!-- 오른쪽 페이지 내용을 추가 -->
+                  </div>
+                  <div class="circle-list">
+                    <div class="circle_container">
+                      <!-- <a href="./characters.html#Harry"> -->
+                      <div class="circle">
+                        <div class="circle_line circle1 S"></div>
+                      </div>
+                      <!-- </a> -->
+                      <p class="person_text">Harry Potter</p>
+                    </div>
+                    <div class="circle_container">
+                      <!-- <a href="./characters.html#Hermione"> -->
+                      <div class="circle">
+                        <div class="circle_line circle2 S"></div>
+                      </div>
+                      <!-- </a> -->
+                      <p class="person_text">Hermione Granger</p>
+                    </div>
+                    <div class="circle_container">
+                      <!-- <a href="./characters.html#Rone"> -->
+                      <div class="circle">
+                        <div class="circle_line circle3 S"></div>
+                      </div>
+                      <!-- </a> -->
+                      <p class="person_text">Ron Weasle</p>
+                    </div>
+                    <div class="circle_container">
+                      <!-- <a href="./characters.html#Dumbledore" id="move"> -->
+                      <div class="circle">
+                        <div class="circle_line circle4 S"></div>
+                      </div>
+                      <!-- </a> -->
+                      <p class="person_text">Albus Dumbledore</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="modal-right-second-container">
+                  <h5 class="page-title">#EXPLAIN</h5>
+                  <div class="explain-btn-list">
+                    <div class="btn" id="btn selected" onclick="openAnswer(0)">
+                      #Motto
+                    </div>
+                    <div class="btn" id="btn" onclick="openAnswer(1)">
+                      #Founder
+                    </div>
+                    <div class="btn" id="btn" onclick="openAnswer(2)">
+                      #Ideology
+                    </div>
+                    <div class="btn" id="btn" onclick="openAnswer(3)">
+                      #Animal
+                    </div>
+                    <div class="btn" id="btn" onclick="openAnswer(4)">
+                      #Color
+                    </div>
+                    <div class="btn" id="btn" onclick="openAnswer(5)">
+                      #Element
+                    </div>
+                    <div class="btn" id="btn" onclick="openAnswer(6)">
+                      #Characteristics
+                    </div>
+                  </div>
+
+                  <div class="explain-container">
+                    <div class="explain-answer" id="answer">
+                      <div class="explain-answer-img-container">
+                        <div class="explain-answer-img img_1"></div>
+                      </div>
+                      <div class="explain-answer-img-text">슬리데린</div>
+                    </div>
+                    <div class="explain-answer" id="answer">
+                      <div class="explain-answer-img-container">
+                        <div class="explain-answer-img img_2"></div>
+                      </div>
+                      <p class="explain-answer-img-text">Godric Gryffindor</p>
+                    </div>
+                    <div class="explain-answer" id="answer">
+                      <!-- <div class="explain-answer-img-container">
+            <div class="explain-answer-img img_3"></div>
+          </div> -->
+                      <p class="explain-answer-img-text">
+                        "Any child who shows courage worthy of the name Try to
+                        teach."
+                      </p>
+                    </div>
+                    <div class="explain-answer" id="answer">
+                      <div class="explain-answer-img-container">
+                        <div class="explain-answer-img img_4"></div>
+                      </div>
+                      <p class="explain-answer-img-text">Lion</p>
+                    </div>
+                    <div class="explain-answer" id="answer">
+                      <div class="explain-answer-img-container">
+                        <div class="explain-answer-img img_5"></div>
+                      </div>
+                      <p class="explain-answer-img-text">Red and gold</p>
+                    </div>
+                    <div class="explain-answer" id="answer">
+                      <div class="explain-answer-img-container">
+                        <div class="explain-answer-img"></div>
+                      </div>
+                      <p class="explain-answer-img-text img_6">Fire</p>
+                    </div>
+                    <div class="explain-answer" id="answer">
+                      <div class="explain-answer-img-container">
+                        <div class="explain-answer-img img_7"></div>
+                      </div>
+                      <p class="explain-answer-img-text">
+                        Courage, boldness and chivalry
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="modal-footer">
+          <h3>Modal Footer</h3>
+        </div> -->
+      </div>
+    </div>
+
+    <!-- Trigger/Open The Modal -->
+    <!-- The Modal -->
+    <div id="myModal3" class="modal-custom">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close-modal">×</span>
+          <!-- <h2>슬리데린</h2> -->
+        </div>
+        <div class="modal-body">
+          <div class="card-modal-content R">
+            <div class="card-modal-header">
+              <img
+                class="card-modal-header-img"
+                src="../image/dormitory_logo/sub_logo_R.png"
+                alt="레번클로깃발"
+              />
+            </div>
+
+            <div class="card-modal-inner">
+              <!-- modal left -->
+              <div class="card_section modal-left">
+                <div class="swiper swiper1">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide slid-1 R"></div>
+                    <div class="swiper-slide slid-2 R"></div>
+                    <div class="swiper-slide slid-3 R"></div>
+                    <div class="swiper-slide slid-4 R"></div>
+                  </div>
+                  <!-- 선택사항 -->
+                  <!-- If we need pagination -->
+                  <div class="swiper-pagination"></div>
+
+                  <!-- If we need navigation buttons -->
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+
+                  <!-- If we need scrollbar -->
+                  <div class="swiper-scrollbar"></div>
+                </div>
+              </div>
+              <!-- modal right -->
+              <div class="card_section modal-right">
+                <div class="modal-right-first-container">
+                  <div class="page-title-wrap">
+                    <h5 class="page-title">#CHARACTER</h5>
+                    <a href="./characters.html">
+                      <h5 class="page-title go">MORE ></h5>
+                    </a>
+                    <!-- 오른쪽 페이지 내용을 추가 -->
+                  </div>
+                  <div class="circle-list">
+                    <div class="circle_container">
+                      <!-- <a href="./characters.html#Harry"> -->
+                      <div class="circle">
+                        <div class="circle_line circle1 R"></div>
+                      </div>
+                      <!-- </a> -->
+                      <p class="person_text">Harry Potter</p>
+                    </div>
+                    <div class="circle_container">
+                      <!-- <a href="./characters.html#Hermione"> -->
+                      <div class="circle">
+                        <div class="circle_line circle2 R"></div>
+                      </div>
+                      <!-- </a> -->
+                      <p class="person_text">Hermione Granger</p>
+                    </div>
+                    <div class="circle_container">
+                      <!-- <a href="./characters.html#Rone"> -->
+                      <div class="circle">
+                        <div class="circle_line circle3 R"></div>
+                      </div>
+                      <!-- </a> -->
+                      <p class="person_text">Ron Weasle</p>
+                    </div>
+                    <div class="circle_container">
+                      <!-- <a href="./characters.html#Dumbledore" id="move"> -->
+                      <div class="circle">
+                        <div class="circle_line circle4 R"></div>
+                      </div>
+                      <!-- </a> -->
+                      <p class="person_text">Albus Dumbledore</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="modal-right-second-container">
+                  <h5 class="page-title">#EXPLAIN</h5>
+                  <div class="explain-btn-list">
+                    <div class="btn" id="btn selected" onclick="openAnswer(0)">
+                      #Motto
+                    </div>
+                    <div class="btn" id="btn" onclick="openAnswer(1)">
+                      #Founder
+                    </div>
+                    <div class="btn" id="btn" onclick="openAnswer(2)">
+                      #Ideology
+                    </div>
+                    <div class="btn" id="btn" onclick="openAnswer(3)">
+                      #Animal
+                    </div>
+                    <div class="btn" id="btn" onclick="openAnswer(4)">
+                      #Color
+                    </div>
+                    <div class="btn" id="btn" onclick="openAnswer(5)">
+                      #Element
+                    </div>
+                    <div class="btn" id="btn" onclick="openAnswer(6)">
+                      #Characteristics
+                    </div>
+                  </div>
+
+                  <div class="explain-container">
+                    <div class="explain-answer" id="answer">
+                      <div class="explain-answer-img-container">
+                        <div class="explain-answer-img img_1"></div>
+                      </div>
+                      <div class="explain-answer-img-text">슬리데린</div>
+                    </div>
+                    <div class="explain-answer" id="answer">
+                      <div class="explain-answer-img-container">
+                        <div class="explain-answer-img img_2"></div>
+                      </div>
+                      <p class="explain-answer-img-text">Godric Gryffindor</p>
+                    </div>
+                    <div class="explain-answer" id="answer">
+                      <!-- <div class="explain-answer-img-container">
+            <div class="explain-answer-img img_3"></div>
+          </div> -->
+                      <p class="explain-answer-img-text">
+                        "Any child who shows courage worthy of the name Try to
+                        teach."
+                      </p>
+                    </div>
+                    <div class="explain-answer" id="answer">
+                      <div class="explain-answer-img-container">
+                        <div class="explain-answer-img img_4"></div>
+                      </div>
+                      <p class="explain-answer-img-text">Lion</p>
+                    </div>
+                    <div class="explain-answer" id="answer">
+                      <div class="explain-answer-img-container">
+                        <div class="explain-answer-img img_5"></div>
+                      </div>
+                      <p class="explain-answer-img-text">Red and gold</p>
+                    </div>
+                    <div class="explain-answer" id="answer">
+                      <div class="explain-answer-img-container">
+                        <div class="explain-answer-img"></div>
+                      </div>
+                      <p class="explain-answer-img-text img_6">Fire</p>
+                    </div>
+                    <div class="explain-answer" id="answer">
+                      <div class="explain-answer-img-container">
+                        <div class="explain-answer-img img_7"></div>
+                      </div>
+                      <p class="explain-answer-img-text">
+                        Courage, boldness and chivalry
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="modal-footer">
+          <h3>Modal Footer</h3>
+        </div> -->
+      </div>
+    </div>
+
+    <!-- Trigger/Open The Modal -->
+    <!-- The Modal -->
+    <div id="myModal4" class="modal-custom">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close-modal">×</span>
+          <!-- <h2>슬리데린</h2> -->
+        </div>
+        <div class="modal-body">
+          <div class="card-modal-content H">
+            <div class="card-modal-header">
+              <img
+                class="card-modal-header-img"
+                src="../image/dormitory_logo/sub_logo_H.png"
+                alt="후플푸프깃발"
+              />
+            </div>
+
+            <div class="card-modal-inner">
+              <!-- modal left -->
+              <div class="card_section modal-left">
+                <div class="swiper swiper1">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide slid-1 H"></div>
+                    <div class="swiper-slide slid-2 H"></div>
+                    <div class="swiper-slide slid-3 H"></div>
+                    <div class="swiper-slide slid-4 H"></div>
+                  </div>
+                  <!-- 선택사항 -->
+                  <!-- If we need pagination -->
+                  <div class="swiper-pagination"></div>
+
+                  <!-- If we need navigation buttons -->
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+
+                  <!-- If we need scrollbar -->
+                  <div class="swiper-scrollbar"></div>
+                </div>
+              </div>
+              <!-- modal right -->
+              <div class="card_section modal-right">
+                <div class="modal-right-first-container">
+                  <div class="page-title-wrap">
+                    <h5 class="page-title">#CHARACTER</h5>
+                    <a href="./characters.html">
+                      <h5 class="page-title go">MORE ></h5>
+                    </a>
+                    <!-- 오른쪽 페이지 내용을 추가 -->
+                  </div>
+                  <div class="circle-list">
+                    <div class="circle_container">
+                      <!-- <a href="./characters.html#Harry"> -->
+                      <div class="circle">
+                        <div class="circle_line circle1 H"></div>
+                      </div>
+                      <!-- </a> -->
+                      <p class="person_text">Harry Potter</p>
+                    </div>
+                    <div class="circle_container">
+                      <!-- <a href="./characters.html#Hermione"> -->
+                      <div class="circle">
+                        <div class="circle_line circle2 H"></div>
+                      </div>
+                      <!-- </a> -->
+                      <p class="person_text">Hermione Granger</p>
+                    </div>
+                    <div class="circle_container">
+                      <!-- <a href="./characters.html#Rone"> -->
+                      <div class="circle">
+                        <div class="circle_line circle3 H"></div>
+                      </div>
+                      <!-- </a> -->
+                      <p class="person_text">Ron Weasle</p>
+                    </div>
+                    <div class="circle_container">
+                      <!-- <a href="./characters.html#Dumbledore" id="move"> -->
+                      <div class="circle">
+                        <div class="circle_line circle4 H"></div>
+                      </div>
+                      <!-- </a> -->
+                      <p class="person_text">Albus Dumbledore</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="modal-right-second-container">
+                  <h5 class="page-title">#EXPLAIN</h5>
+                  <div class="explain-btn-list">
+                    <div class="btn" id="btn selected" onclick="openAnswer(0)">
+                      #Motto
+                    </div>
+                    <div class="btn" id="btn" onclick="openAnswer(1)">
+                      #Founder
+                    </div>
+                    <div class="btn" id="btn" onclick="openAnswer(2)">
+                      #Ideology
+                    </div>
+                    <div class="btn" id="btn" onclick="openAnswer(3)">
+                      #Animal
+                    </div>
+                    <div class="btn" id="btn" onclick="openAnswer(4)">
+                      #Color
+                    </div>
+                    <div class="btn" id="btn" onclick="openAnswer(5)">
+                      #Element
+                    </div>
+                    <div class="btn" id="btn" onclick="openAnswer(6)">
+                      #Characteristics
+                    </div>
+                  </div>
+
+                  <div class="explain-container">
+                    <div class="explain-answer" id="answer">
+                      <div class="explain-answer-img-container">
+                        <div class="explain-answer-img img_1"></div>
+                      </div>
+                      <div class="explain-answer-img-text">슬리데린</div>
+                    </div>
+                    <div class="explain-answer" id="answer">
+                      <div class="explain-answer-img-container">
+                        <div class="explain-answer-img img_2"></div>
+                      </div>
+                      <p class="explain-answer-img-text">Godric Gryffindor</p>
+                    </div>
+                    <div class="explain-answer" id="answer">
+                      <!-- <div class="explain-answer-img-container">
+            <div class="explain-answer-img img_3"></div>
+          </div> -->
+                      <p class="explain-answer-img-text">
+                        "Any child who shows courage worthy of the name Try to
+                        teach."
+                      </p>
+                    </div>
+                    <div class="explain-answer" id="answer">
+                      <div class="explain-answer-img-container">
+                        <div class="explain-answer-img img_4"></div>
+                      </div>
+                      <p class="explain-answer-img-text">Lion</p>
+                    </div>
+                    <div class="explain-answer" id="answer">
+                      <div class="explain-answer-img-container">
+                        <div class="explain-answer-img img_5"></div>
+                      </div>
+                      <p class="explain-answer-img-text">Red and gold</p>
+                    </div>
+                    <div class="explain-answer" id="answer">
+                      <div class="explain-answer-img-container">
+                        <div class="explain-answer-img"></div>
+                      </div>
+                      <p class="explain-answer-img-text img_6">Fire</p>
+                    </div>
+                    <div class="explain-answer" id="answer">
+                      <div class="explain-answer-img-container">
+                        <div class="explain-answer-img img_7"></div>
+                      </div>
+                      <p class="explain-answer-img-text">
+                        Courage, boldness and chivalry
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="modal-footer">
+          <h3>Modal Footer</h3>
+        </div> -->
+      </div>
+    </div>
+  </body>
 </html>

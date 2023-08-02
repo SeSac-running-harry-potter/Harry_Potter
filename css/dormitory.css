@@ -1,0 +1,865 @@
+/* 폰트 css */
+@font-face {
+  font-family: "JeonjuSunR";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202@1.0/JeonjuSunR.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 메인 안 Lorem 글씨체 */
+@font-face {
+  font-family: "DeogonPrincessClassic";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/DeogonPrincessClassic.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+/* 타이틀 글씨체 */
+@font-face {
+  font-family: "OKCHAN";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/OKCHAN.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 메인 */
+/* 배경 동영상 추가해야함 */
+.cards_wrap {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  z-index: 1;
+  /* border: 5px solid red; */
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  background-color: #eaeaea;
+  cursor: pointer;
+  /* border: 1px solid red; */
+  transition: transform 1s ease, opacity 0.3s ease;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card1 {
+  background-image: url(../image/subpage_그리핀도르_1.gif);
+}
+
+.card2 {
+  background-image: url(../image/subpage_슬리데린.gif);
+}
+
+.card3 {
+  background-image: url(../image/subpage_레번클로.gif);
+}
+
+.card4 {
+  background-image: url(../image/subpage_후플푸프.gif);
+}
+
+.footer_font {
+  font-family: "JeonjuSunR";
+  font-size: 2rem;
+  color: white;
+  box-shadow: 10px 10px 20px #c8c8c8;
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* 기본 작동 모달 */
+.modal-custom {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+.modal-content {
+  position: relative;
+  background-color: rgb(254, 254, 254);
+  margin: auto;
+  border-radius: 12px;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.8s;
+  animation-name: animatetop;
+  animation-duration: 0.8s;
+}
+@-webkit-keyframes animatetop {
+  from {
+    /* top: -300px; */
+    opacity: 0;
+    width: 100px;
+    height: 100px;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+    width: 80%;
+    height: 80%;
+  }
+}
+@keyframes animatetop {
+  from {
+    /* top: -300px; */
+    opacity: 0;
+    width: 100px;
+    height: 100px;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+    width: 80%;
+    height: 80%;
+  }
+}
+.close-modal {
+  color: rgb(42, 41, 41);
+  font-size: 20px;
+  font-weight: bold;
+}
+.close-modal:hover,
+.close-modal:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+/* --------------------------------------------------------------------------- */
+/* 추가되는 모달 안 컨텐츠 */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  /* color: yellow;
+  font-size: 2rem;
+  text-shadow: 10px 10px 10px black; */
+}
+img {
+  width: 100%;
+}
+section {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+#domitory {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  background-repeat: repeat;
+}
+
+.logo_header {
+  width: 100%;
+  height: 15vh;
+  /* color: #eaeaea; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  padding: 0.5rem;
+}
+
+.card_header {
+  font-size: 3rem;
+  height: 15vh;
+  line-height: 15vh;
+  /* height: 10vh;
+  line-height: 10vh; */
+  color: #eaeaea;
+  text-align: center;
+  font-family: "JeonjuSunR";
+}
+
+.footer {
+  height: 20vh;
+  width: 100%;
+  /* background-color: aliceblue; */
+  /* position: absolute; */
+  bottom: 0;
+  line-height: 20vh;
+  text-align: center;
+  transition: transform 1s ease, opacity 0.3s ease;
+}
+
+.footer:hover {
+  transform: scale(1.1);
+}
+
+.card-modal-content {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.card-modal-content.G {
+  background-image: url("../image/dormitory_logo/dormitory_bg_G.jpg");
+}
+
+.card-modal-content.S {
+  text-align: center;
+  background-image: url("../image/dormitory_logo/dormitory_bg_S.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.card-modal-content.R {
+  text-align: center;
+  background-image: url("../image/dormitory_logo/dormitory_bg_R.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.card-modal-content.H {
+  text-align: center;
+  background-image: url("../image/dormitory_logo/dormitory_bg_H.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.card-modal-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-modal-header-img {
+  width: 200px;
+  /* border: 1px solid red; */
+  padding: 1rem;
+}
+
+.card-modal-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* background-color: blue; */
+  width: 100%;
+  height: 90%;
+}
+
+.card_section {
+  width: 49%;
+  position: relative;
+  padding: 1rem;
+  /* border: 1px solid white; */
+}
+
+/* 모달 left */
+.swiper {
+  width: 100%;
+  background-color: rgb(253, 253, 252);
+  height: 100%;
+  border-radius: 1rem;
+}
+
+.swiper .swiper-wrapper {
+  display: flex;
+  /* border: 2px solid red; */
+  /* padding: 1rem 0rem; */
+  width: 100%;
+  height: 100%;
+  /* margin: 5rem; */
+}
+
+.swiper-slide slid-1 swiper-slide-active {
+  /* width: 100%; */
+}
+
+/* slid-1 그리핀도르*/
+.swiper .swiper-wrapper .swiper-slide.slid-1 {
+  background: url("../image/dormitory_slide/sub_G_main_1.gif") no-repeat center
+    center/contain;
+}
+.swiper .swiper-wrapper .swiper-slide.slid-2 {
+  background: url("../image/dormitory_slide/sub_G_main_2.jpg") no-repeat center
+    center/contain;
+}
+.swiper .swiper-wrapper .swiper-slide.slid-3 {
+  background: url("../image/dormitory_slide/sub_G_main_3.gif") no-repeat center
+    center/contain;
+}
+.swiper .swiper-wrapper .swiper-slide.slid-4 {
+  background: url("../image/dormitory_slide/sub_G_main_4.gif") no-repeat center
+    center/contain;
+}
+
+/* slid-1 슬리데린*/
+.swiper .swiper-wrapper .swiper-slide.slid-1.S {
+  background: url("../image/dormitory_slide/sub_S_main_1.gif") no-repeat center
+    center/contain;
+}
+.swiper .swiper-wrapper .swiper-slide.slid-2.S {
+  background: url("../image/dormitory_slide/sub_S_main_2.gif") no-repeat center
+    center/contain;
+}
+.swiper .swiper-wrapper .swiper-slide.slid-3.S {
+  background: url("../image/dormitory_slide/sub_S_main_3.png") no-repeat center
+    center/contain;
+}
+.swiper .swiper-wrapper .swiper-slide.slid-4.S {
+  background: url("../image/dormitory_slide/sub_S_main_4.gif") no-repeat center
+    center/contain;
+}
+
+/* slid-1 레번클로*/
+.swiper .swiper-wrapper .swiper-slide.slid-1.R {
+  background: url("../image/dormitory_slide/sub_R_main_1.gif") no-repeat center
+    center/contain;
+}
+.swiper .swiper-wrapper .swiper-slide.slid-2.R {
+  background: url("../image/dormitory_slide/sub_R_main_2.jpg") no-repeat center
+    center/contain;
+}
+.swiper .swiper-wrapper .swiper-slide.slid-3.R {
+  background: url("../image/dormitory_slide/sub_R_main_3.jpeg") no-repeat center
+    center/contain;
+}
+.swiper .swiper-wrapper .swiper-slide.slid-4.R {
+  background: url("../image/dormitory_slide/sub_R_main_4.jpg") no-repeat center
+    center/contain;
+}
+
+/* slid-1 후플푸프*/
+.swiper .swiper-wrapper .swiper-slide.slid-1.H {
+  background: url("../image/dormitory_slide/sub_H_main_1.gif") no-repeat center
+    center/contain;
+}
+.swiper .swiper-wrapper .swiper-slide.slid-2.H {
+  background: url("../image/dormitory_slide/sub_H_main_2.jpg") no-repeat center
+    center/contain;
+}
+.swiper .swiper-wrapper .swiper-slide.slid-3.H {
+  background: url("../image/dormitory_slide/sub_H_main_3.jpeg") no-repeat center
+    center/contain;
+}
+.swiper .swiper-wrapper .swiper-slide.slid-4.H {
+  background: url("../image/dormitory_slide/sub_H_main_4.jpg") no-repeat center
+    center/contain;
+}
+
+/* pagination 커스텀 */
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(155, 31, 22);
+  border: 1px solid red;
+}
+
+.swiper-pagination-bullet-active {
+  transition: 0.5s;
+  background-color: darkred;
+  width: 20px;
+  border-radius: 5px;
+}
+
+/* 화살표 커스텀 */
+.swiper1 .swiper-button-prev,
+.swiper1 .swiper-button-next {
+  color: gray;
+}
+
+.swiper1 .swiper-button-prev:hover,
+.swiper1 .swiper-button-next:hover,
+.swiper1 .swiper-button-prev:active,
+.swiper1 .swiper-button-next:active {
+  color: rgb(203, 23, 23);
+}
+
+.modal-right {
+  font-family: "DeogonPrincessClassic";
+}
+
+.modal-right-first-container {
+  /* border: 3px solid yellow; */
+  box-shadow: 5px 5px 20px rgb(222, 217, 217);
+  background-color: #ffffff;
+  border-radius: 20px;
+  width: 100%;
+
+  padding: 1rem;
+}
+.page-title-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-title {
+  padding-bottom: 1rem;
+  text-align: left;
+  color: black;
+  margin: 5px;
+  font-size: 14px;
+  font-family: "JeonjuSunR";
+}
+
+.page-title.go {
+  color: rgb(16, 10, 127);
+  text-shadow: 5px 5px 15px rgb(19, 7, 84);
+  cursor: pointer;
+}
+
+.circle-list {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  /* align-items: center; */
+  /* border: 2px solid red; */
+  position: relative;
+  width: 100%;
+  height: 50%;
+}
+
+.circle_container {
+  /* border: 1px solid black;  */
+  box-shadow: 2px 2px 10px 2px rgb(0, 0, 0, 0.3);
+  border-radius: 1rem;
+  background-color: #ffffff;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 22%;
+}
+.circle {
+  width: 7vw;
+  height: 7vw;
+  background: linear-gradient(45deg, #f8f001, #e815bb);
+  border-radius: 50%;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle_container:active,
+.circle_container:hover {
+  transform: scale(1.1);
+  /* transition: 1.5s; */
+  font-weight: 700;
+  /* cursor: pointer; */
+}
+/* .circle1:active {
+  background-color: gray;
+} */
+
+.circle_line {
+  width: 6vw;
+  height: 6vw;
+  border-radius: 50%;
+  border: 2px solid white;
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  background-size: cover;
+}
+
+/* people 그리핀도르 */
+.circle1 {
+  background-image: url("../image/dormitory_people/sub_G_people_1.jpeg");
+}
+.circle2 {
+  background-image: url("../image/dormitory_people/sub_G_people_2.jpeg");
+}
+.circle3 {
+  background-image: url("../image/dormitory_people/sub_G_people_3.jpeg");
+}
+.circle4 {
+  background-image: url("../image/dormitory_people/sub_G_people_4.jpeg");
+}
+
+/* people 슬리데린 */
+.circle1.S {
+  background-image: url("../image/dormitory_people/sub_S_people_1.jpeg");
+}
+.circle2.S {
+  background-image: url("../image/dormitory_people/sub_S_people_2.jpeg");
+}
+.circle3.S {
+  background-image: url("../image/dormitory_people/sub_S_people_3.jpeg");
+}
+.circle4.S {
+  background-image: url("../image/dormitory_people/sub_S_people_4.jpeg");
+}
+
+/* people 레번클로 */
+.circle1.R {
+  background-image: url("../image/dormitory_people/sub_R_people_1.jpeg");
+}
+.circle2.R {
+  background-image: url("../image/dormitory_people/sub_R_people_2.jpeg");
+}
+.circle3.R {
+  background-image: url("../image/dormitory_people/sub_R_people_3.jpeg");
+}
+.circle4.R {
+  background-image: url("../image/dormitory_people/sub_R_people_4.jpeg");
+}
+
+/* people 후플푸프 */
+.circle1.H {
+  background-image: url("../image/dormitory_people/sub_H_people_1.jpeg");
+}
+.circle2.H {
+  background-image: url("../image/dormitory_people/sub_H_people_2.jpeg");
+}
+.circle3.H {
+  background-image: url("../image/dormitory_people/sub_H_people_3.jpeg");
+}
+.circle4.H {
+  background-image: url("../image/dormitory_people/sub_H_people_4.jpeg");
+}
+
+.person_text {
+  font-size: 1.1vw;
+  word-break: keep-all;
+}
+
+.modal-right-second-container {
+  box-shadow: 5px 5px 20px rgb(222, 217, 217);
+  background-color: #ffffff;
+  border-radius: 20px;
+  width: 100%;
+  /* height: 60%; */
+  padding: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* 설명버튼 */
+.explain-btn-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 0.5rem;
+}
+
+.btn {
+  background-color: #fff;
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: auto;
+  padding: 7px 12px;
+  font-size: 1.2vw;
+  margin: 3px;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: rgb(23, 23, 23);
+  color: rgb(239, 239, 239);
+  cursor: pointer;
+}
+
+.btn.selected {
+  background-color: rgb(23, 23, 23);
+  color: rgb(239, 239, 239);
+}
+
+.explain-container {
+  /* border: 1px solid black; */
+  border-radius: 1rem;
+  box-shadow: 0px 5px 30px rgb(82, 81, 81, 0.5);
+  padding: 2rem;
+  margin-top: 0.5rem;
+  position: relative;
+  width: 100%;
+  height: 24vh;
+}
+
+.explain-answer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s;
+  display: flex;
+
+  justify-content: space-evenly;
+  align-items: center;
+  /* border: 1px solid blue; */
+  width: 100%;
+  padding: 1rem;
+}
+
+.explain-answer.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.explain-answer-img-container {
+  width: 12vw;
+  height: 12vw;
+  /* border: 1px solid red; */
+}
+.explain-answer-img {
+  width: 100%;
+  height: 100%;
+  background: no-repeat center center/contain;
+}
+
+/* answer 그리핀도르  */
+.explain-answer-img.img_1 {
+  background-image: url("../image/그리핀도르1.png");
+}
+.explain-answer-img.img_2 {
+  background-image: url("../image/subpage_그리핀도르_창시자.gif");
+}
+.explain-answer-img.img_3 {
+  background-image: url("../image/그리핀도르1.png");
+}
+.explain-answer-img.img_4 {
+  background-image: url("../image/그리핀도르1.png");
+}
+.explain-answer-img.img_5 {
+  background-image: url("../image/그리핀도르1.png");
+}
+.explain-answer-img.img_6 {
+  background-image: url("../image/그리핀도르1.png");
+}
+
+/* answer 슬리데린  */
+.explain-answer-img.img_1.S {
+  background-image: url("../image/그리핀도르1.png");
+}
+.explain-answer-img.img_2.S {
+  background-image: url("../image/subpage_그리핀도르_창시자.gif");
+}
+.explain-answer-img.img_3.S {
+  background-image: url("../image/그리핀도르1.png");
+}
+.explain-answer-img.img_4.S {
+  background-image: url("../image/그리핀도르1.png");
+}
+.explain-answer-img.img_5.S {
+  background-image: url("../image/그리핀도르1.png");
+}
+.explain-answer-img.img_6.S {
+  background-image: url("../image/그리핀도르1.png");
+}
+
+/* answer 레번클로  */
+.explain-answer-img.img_1.R {
+  background-image: url("../image/그리핀도르1.png");
+}
+.explain-answer-img.img_2.R {
+  background-image: url("../image/subpage_그리핀도르_창시자.gif");
+}
+.explain-answer-img.img_3.R {
+  background-image: url("../image/그리핀도르1.png");
+}
+.explain-answer-img.img_4.R {
+  background-image: url("../image/그리핀도르1.png");
+}
+.explain-answer-img.img_5.R {
+  background-image: url("../image/그리핀도르1.png");
+}
+.explain-answer-img.img_6.R {
+  background-image: url("../image/그리핀도르1.png");
+}
+
+/* answer 후플푸프  */
+.explain-answer-img.img_1.H {
+  background-image: url("../image/그리핀도르1.png");
+}
+.explain-answer-img.img_2.H {
+  background-image: url("../image/subpage_그리핀도르_창시자.gif");
+}
+.explain-answer-img.img_3.H {
+  background-image: url("../image/그리핀도르1.png");
+}
+.explain-answer-img.img_4.H {
+  background-image: url("../image/그리핀도르1.png");
+}
+.explain-answer-img.img_5.H {
+  background-image: url("../image/그리핀도르1.png");
+}
+.explain-answer-img.img_6.H {
+  background-image: url("../image/그리핀도르1.png");
+}
+
+.explain-answer-img-text {
+  font-size: 16px;
+  padding-top: 0.5rem;
+  word-break: keep-all;
+}
+/* 
+.modal-under {
+  width: 35vw;
+  background-color: rgb(63, 165, 42);
+  font-size: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+.modal-header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  /* background-color: white; */
+}
+
+.modal-close {
+  cursor: pointer;
+  transition: transform 0.6s ease;
+  z-index: 2;
+}
+
+@media screen and (max-width: 899px) {
+  .modal-overlay {
+    /* height: 100vh; */
+    /* width: 100%; */
+  }
+
+  a {
+    /* text-decoration: none;
+    color: yellow; */
+    font-size: 1.3rem;
+    /* text-shadow: 10px 10px 10px black; */
+  }
+
+  .modal {
+    overflow-y: scroll;
+    object-fit: cover;
+    object-position: center;
+    background-repeat: repeat;
+    width: 90vw;
+    height: 80vh;
+  }
+
+  .card-modal-content {
+    width: 100%;
+    height: 100%;
+  }
+
+  .card-modal-inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card_section {
+    width: 100%;
+  }
+  .explain-container {
+    /* display: flex;
+flex-wrap: wrap;  */
+    /* 화면 너비가 900 미만일 때 요소들을 여러 줄에 표시 */
+  }
+
+  .circle-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    /* border: 2px solid black; */
+  }
+
+  .circle_container {
+    margin: 5px;
+    width: 70px;
+    height: 100px;
+  }
+  .circle {
+    width: 50px;
+    height: 50px;
+  }
+
+  .circle_line {
+    width: 45px;
+    height: 45px;
+  }
+
+  .explain-answer {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .explain-answer-img-container {
+    width: 150px;
+    height: 150px;
+    /* border: 1px solid red; */
+  }
+
+  .swiper {
+    /* width: 350px; */
+    padding-right: 5vw;
+  }
+
+  .swiper .swiper-wrapper {
+    display: flex;
+    align-items: center;
+    /* border: 5px solid red; */
+    /* padding: 1rem; */
+    width: 100%;
+    height: 500px;
+    padding: 1rem;
+  }
+
+  .swiper .swiper-wrapper .swiper-slide {
+    width: 90%;
+    height: 100%;
+    /* border: 1px solid black; */
+
+    /* text-align: center;
+  line-height: 100px; */
+    /* box-sizing: border-box; */
+    /* font-size: 25px; */
+  }
+}
