@@ -82,3 +82,10 @@ const sw = new Swiper(".swiper1", {
     el: ".swiper-scrollbar",
   },
 });
+
+const parentCircles = document.querySelectorAll(".circle"); //circle 클래스(바깥 테두리 담당)
+parentCircles.forEach((circle) => {
+  circle.addEventListener("click", () => {
+    circle.style.background = "#ddd";
+  });
+});
