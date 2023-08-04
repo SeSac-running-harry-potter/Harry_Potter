@@ -70,11 +70,17 @@
   background-image: url(../image/subpage_후플푸프.gif);
 }
 
-.footer_font {
+.footer a {
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer a span {
   font-family: "JeonjuSunR";
   font-size: 2rem;
   color: white;
-  box-shadow: 10px 10px 20px #c8c8c8;
+  /* box-shadow: 10px 10px 20px #c8c8c8; */
 }
 
 /* --------------------------------------------------------------------------- */
@@ -213,13 +219,15 @@ section {
 }
 
 .footer {
-  height: 20vh;
+  height: 15vh;
   width: 100%;
-  /* background-color: aliceblue; */
+  /* box-shadow: 0px 15px 20px #c8c8c8; */
+  /* background-color: rgb(27, 100, 164); */
   /* position: absolute; */
   bottom: 0;
-  line-height: 20vh;
+  margin: 3rem 0px;
   text-align: center;
+
   transition: transform 1s ease, opacity 0.3s ease;
 }
 
@@ -320,11 +328,11 @@ section {
     center/contain;
 }
 .swiper .swiper-wrapper .swiper-slide.slid-3 {
-  background: url("../image/dormitory_slide/sub_G_main_3.gif") no-repeat center
+  background: url("../image/dormitory_slide/sub_G_main_3.jpg") no-repeat center
     center/contain;
 }
 .swiper .swiper-wrapper .swiper-slide.slid-4 {
-  background: url("../image/dormitory_slide/sub_G_main_4.gif") no-repeat center
+  background: url("../image/dormitory_slide/sub_G_main_4.jpg") no-repeat center
     center/contain;
 }
 
@@ -334,15 +342,15 @@ section {
     center/contain;
 }
 .swiper .swiper-wrapper .swiper-slide.slid-2.S {
-  background: url("../image/dormitory_slide/sub_S_main_2.gif") no-repeat center
+  background: url("../image/dormitory_slide/sub_S_main_2.jpg") no-repeat center
     center/contain;
 }
 .swiper .swiper-wrapper .swiper-slide.slid-3.S {
-  background: url("../image/dormitory_slide/sub_S_main_3.png") no-repeat center
+  background: url("../image/dormitory_slide/sub_S_main_3.jpg") no-repeat center
     center/contain;
 }
 .swiper .swiper-wrapper .swiper-slide.slid-4.S {
-  background: url("../image/dormitory_slide/sub_S_main_4.gif") no-repeat center
+  background: url("../image/dormitory_slide/sub_S_main_4.jpg") no-repeat center
     center/contain;
 }
 
@@ -356,7 +364,7 @@ section {
     center/contain;
 }
 .swiper .swiper-wrapper .swiper-slide.slid-3.R {
-  background: url("../image/dormitory_slide/sub_R_main_3.jpeg") no-repeat center
+  background: url("../image/dormitory_slide/sub_R_main_3.jpg") no-repeat center
     center/contain;
 }
 .swiper .swiper-wrapper .swiper-slide.slid-4.R {
@@ -374,7 +382,7 @@ section {
     center/contain;
 }
 .swiper .swiper-wrapper .swiper-slide.slid-3.H {
-  background: url("../image/dormitory_slide/sub_H_main_3.jpeg") no-repeat center
+  background: url("../image/dormitory_slide/sub_H_main_3.jpg") no-repeat center
     center/contain;
 }
 .swiper .swiper-wrapper .swiper-slide.slid-4.H {
@@ -646,81 +654,91 @@ section {
 
 /* answer 그리핀도르  */
 .explain-answer-img.img_1 {
-  background-image: url("../image/그리핀도르1.png");
+  background-image: url("../image/dormitory_explain/sub_G_explain_1.jpeg");
 }
 .explain-answer-img.img_2 {
-  background-image: url("../image/subpage_그리핀도르_창시자.gif");
+  background-image: url("../image/dormitory_explain/sub_G_explain_2.jpeg");
 }
-.explain-answer-img.img_3 {
+/* .explain-answer-img.img_3 {
   background-image: url("../image/그리핀도르1.png");
-}
+} */
 .explain-answer-img.img_4 {
-  background-image: url("../image/그리핀도르1.png");
+  background-image: url("../image/dormitory_explain/sub_G_explain_4.jpg");
 }
 .explain-answer-img.img_5 {
-  background-image: url("../image/그리핀도르1.png");
+  background-image: url("../image/dormitory_explain/sub_G_explain_5.jpg");
 }
 .explain-answer-img.img_6 {
+  background-image: url("../image/dormitory_explain/sub_G_explain_6.jpeg");
+}
+
+.explain-answer-img.img_7 {
   background-image: url("../image/그리핀도르1.png");
 }
 
 /* answer 슬리데린  */
 .explain-answer-img.img_1.S {
-  background-image: url("../image/그리핀도르1.png");
+  background-image: url("../image/dormitory_explain/sub_S_explain_1.jpeg");
 }
 .explain-answer-img.img_2.S {
-  background-image: url("../image/subpage_그리핀도르_창시자.gif");
+  background-image: url("../image/dormitory_explain/sub_S_explain_2.jpeg");
 }
-.explain-answer-img.img_3.S {
+/* .explain-answer-img.img_3.S {
   background-image: url("../image/그리핀도르1.png");
-}
+} */
 .explain-answer-img.img_4.S {
-  background-image: url("../image/그리핀도르1.png");
+  background-image: url("../image/dormitory_explain/sub_S_explain_4.jpg");
 }
 .explain-answer-img.img_5.S {
-  background-image: url("../image/그리핀도르1.png");
+  background-image: url("../image/dormitory_explain/sub_S_explain_5.jpg");
 }
 .explain-answer-img.img_6.S {
+  background-image: url("../image/dormitory_explain/sub_S_explain_6.jpeg");
+}
+.explain-answer-img.img_7 S {
   background-image: url("../image/그리핀도르1.png");
 }
 
 /* answer 레번클로  */
 .explain-answer-img.img_1.R {
-  background-image: url("../image/그리핀도르1.png");
+  background-image: url("../image/dormitory_explain/sub_R_explain_1.jpeg");
 }
 .explain-answer-img.img_2.R {
-  background-image: url("../image/subpage_그리핀도르_창시자.gif");
+  background-image: url("../image/dormitory_explain/sub_R_explain_2.jpeg");
 }
-.explain-answer-img.img_3.R {
+/* .explain-answer-img.img_3.R {
   background-image: url("../image/그리핀도르1.png");
-}
+} */
 .explain-answer-img.img_4.R {
-  background-image: url("../image/그리핀도르1.png");
+  background-image: url("../image/dormitory_explain/sub_R_explain_4.jpg");
 }
 .explain-answer-img.img_5.R {
-  background-image: url("../image/그리핀도르1.png");
+  background-image: url("../image/dormitory_explain/sub_R_explain_5.jpg");
 }
 .explain-answer-img.img_6.R {
-  background-image: url("../image/그리핀도르1.png");
+  background-image: url("../image/dormitory_explain/sub_R_explain_6.jpeg");
 }
 
 /* answer 후플푸프  */
 .explain-answer-img.img_1.H {
-  background-image: url("../image/그리핀도르1.png");
+  background-image: url("../image/dormitory_explain/sub_H_explain_1.jpeg");
 }
 .explain-answer-img.img_2.H {
-  background-image: url("../image/subpage_그리핀도르_창시자.gif");
+  background-image: url("../image/dormitory_explain/sub_H_explain_2.jpeg");
 }
-.explain-answer-img.img_3.H {
+/* .explain-answer-img.img_3.H {
   background-image: url("../image/그리핀도르1.png");
-}
+} */
 .explain-answer-img.img_4.H {
-  background-image: url("../image/그리핀도르1.png");
+  background-image: url("../image/dormitory_explain/sub_H_explain_4.jpg");
 }
 .explain-answer-img.img_5.H {
-  background-image: url("../image/그리핀도르1.png");
+  background-image: url("../image/dormitory_explain/sub_H_explain_5.jpg");
 }
 .explain-answer-img.img_6.H {
+  background-image: url("../image/dormitory_explain/sub_H_explain_6.jpeg");
+}
+.explain-answer-img.img_7.H {
   background-image: url("../image/그리핀도르1.png");
 }
 
@@ -856,10 +874,9 @@ flex-wrap: wrap;  */
     width: 90%;
     height: 100%;
     /* border: 1px solid black; */
+  }
 
-    /* text-align: center;
-  line-height: 100px; */
-    /* box-sizing: border-box; */
-    /* font-size: 25px; */
+  .footer a span {
+    font-size: 16px;
   }
 }
