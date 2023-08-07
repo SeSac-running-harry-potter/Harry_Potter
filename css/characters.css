@@ -16,6 +16,13 @@
 
 * {
   font-family: "ChosunCentennial";
+  margin: 0.5%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2f280b;
 }
 
 .menus {
@@ -54,12 +61,17 @@ article {
 .contents {
   display: block;
   color: #f1e0e0;
-  margin: 5vw;
+  margin: 2vw;
 }
 
 .quotes {
-  margin: 2vw;
+  padding: 2vw;
+  margin: 5vh;
   text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-image: url(../image/characters/명대사.png);
+  background-size: cover;
+  color: #2f280b;
 }
 
 .Hermione,
