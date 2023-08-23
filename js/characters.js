@@ -1,3 +1,4 @@
+// 메뉴바에서 캐릭터 이름 클릭시 해당 캐릭터로 스크롤 이동
 $(document).ready(function ($) {
   $("#move").click(function (e) {
     e.preventDefault(); // 새로고침 방지
@@ -5,29 +6,35 @@ $(document).ready(function ($) {
   });
 });
 
-let Harry = gsap.timeline();
+let Harry = gsap.timeline({
+  default: { display: "none" },
+});
 Harry.from(".Harry", {
-  x: 10000,
+  display: "flex",
+  x: 1000,
 });
 
-let Hermione = gsap.timeline();
+let Hermione = gsap.timeline({
+  default: { display: "none" },
+});
 Hermione.from(".Hermione", {
-  x: -10000,
+  display: "flex",
+  x: -1000,
 });
 
 let Ron = gsap.timeline();
 Ron.from(".Ron", {
-  x: 10000,
+  x: 1000,
 });
 
 let Ginny = gsap.timeline();
 Ginny.from(".Ginny", {
-  x: -10000,
+  x: -1000,
 });
 
 let Malfoy = gsap.timeline();
 Malfoy.from(".Malfoy", {
-  x: 10000,
+  x: 1000,
 });
 
 let Voldemort = gsap.timeline();
@@ -37,27 +44,27 @@ Voldemort.from(".Voldemort", {
 
 let Snape = gsap.timeline();
 Snape.from(".Snape", {
-  x: 10000,
+  x: 1000,
 });
 
 let Dumbledore = gsap.timeline();
 Dumbledore.from(".Dumbledore", {
-  x: -10000,
+  x: -1000,
 });
 
 let Sirius = gsap.timeline();
 Sirius.from(".Sirius", {
-  x: 10000,
+  x: 1000,
 });
 
 let McGonagall = gsap.timeline();
 McGonagall.from(".McGonagall", {
-  x: -10000,
+  x: -1000,
 });
 
 let Dobby = gsap.timeline();
 Dobby.from(".Dobby", {
-  x: 10000,
+  x: 1000,
 });
 
 ScrollTrigger.create({
@@ -67,8 +74,6 @@ ScrollTrigger.create({
   end: "top center", // 요소끝점 스크롤끝점
   end: "+=0", // 스크롤의 총 길이 설정
   scrub: 2,
-  pin: true,
-  markers: true,
 });
 
 ScrollTrigger.create({
@@ -78,8 +83,6 @@ ScrollTrigger.create({
   end: "top center", // 요소끝점 스크롤끝점
   end: "+=0", // 스크롤의 총 길이 설정
   scrub: 2,
-  pin: true,
-  markers: true,
 });
 
 ScrollTrigger.create({
@@ -89,8 +92,6 @@ ScrollTrigger.create({
   end: "top center", // 요소끝점 스크롤끝점
   end: "+=0", // 스크롤의 총 길이 설정
   scrub: 2,
-  pin: true,
-  markers: true,
 });
 
 ScrollTrigger.create({
@@ -100,8 +101,6 @@ ScrollTrigger.create({
   end: "top center", // 요소끝점 스크롤끝점
   end: "+=0", // 스크롤의 총 길이 설정
   scrub: 2,
-  pin: true,
-  markers: true,
 });
 
 ScrollTrigger.create({
@@ -111,8 +110,6 @@ ScrollTrigger.create({
   end: "top center", // 요소끝점 스크롤끝점
   end: "+=0", // 스크롤의 총 길이 설정
   scrub: 2,
-  pin: true,
-  markers: true,
 });
 
 ScrollTrigger.create({
@@ -122,8 +119,6 @@ ScrollTrigger.create({
   end: "top center", // 요소끝점 스크롤끝점
   end: "+=0", // 스크롤의 총 길이 설정
   scrub: 2,
-  pin: true,
-  markers: true,
 });
 
 ScrollTrigger.create({
@@ -133,8 +128,6 @@ ScrollTrigger.create({
   end: "top center", // 요소끝점 스크롤끝점
   end: "+=0", // 스크롤의 총 길이 설정
   scrub: 2,
-  pin: true,
-  markers: true,
 });
 
 ScrollTrigger.create({
@@ -144,8 +137,6 @@ ScrollTrigger.create({
   end: "top center", // 요소끝점 스크롤끝점
   end: "+=0", // 스크롤의 총 길이 설정
   scrub: 2,
-  pin: true,
-  markers: true,
 });
 
 ScrollTrigger.create({
@@ -155,8 +146,6 @@ ScrollTrigger.create({
   end: "top center", // 요소끝점 스크롤끝점
   end: "+=0", // 스크롤의 총 길이 설정
   scrub: 2,
-  pin: true,
-  markers: true,
 });
 
 ScrollTrigger.create({
@@ -166,17 +155,13 @@ ScrollTrigger.create({
   end: "top center", // 요소끝점 스크롤끝점
   end: "+=0", // 스크롤의 총 길이 설정
   scrub: 2,
-  pin: true,
-  markers: true,
 });
 
 ScrollTrigger.create({
   animation: Dobby,
   trigger: ".McGonagall", // 객체 기준 범위
-  start: "top top", // 요소시작점 스크롤시작점
-  end: "top center", // 요소끝점 스크롤끝점
+  start: "top center", // 요소시작점 스크롤시작점
+  end: "top top", // 요소끝점 스크롤끝점
   end: "+=0", // 스크롤의 총 길이 설정
   scrub: 2,
-  pin: true,
-  markers: true,
 });
