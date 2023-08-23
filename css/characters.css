@@ -70,7 +70,11 @@ article {
   text-align: center;
   background-color: rgba(255, 255, 255, 0.5);
   background-image: url(../image/characters/명대사.png);
+  border: 5px solid transparent; /* 초기에는 투명한 테두리로 설정 */
   background-size: cover;
+
+  border-radius: 20px;
+  border-color: rgba(0, 0, 0, 0.5); /* 흐려지는 색상 */
   color: #2f280b;
 }
 
