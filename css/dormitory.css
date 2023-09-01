@@ -26,48 +26,72 @@
 
 /* 메인 */
 /* 배경 동영상 추가해야함 */
-.cards_wrap {
+.cards {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  gap: 20px;
+  position: relative;
   z-index: 1;
-  /* border: 5px solid red; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  overflow: hidden;
 }
 
 .card {
-  width: 300px;
+  width: 800px;
   height: 400px;
-  background-color: #eaeaea;
+  /* background-color: #eaeaea; */
   cursor: pointer;
-  /* border: 1px solid red; */
   transition: transform 1s ease, opacity 0.3s ease;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  /* background-position: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-
 .card:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
+}
+section {
+  background-image: url(../image/dormitory_main/main_background.png);
 }
 
 .card1 {
-  background-image: url(../image/subpage_그리핀도르_1.gif);
+  background-image: url(../image/dormitory_main/main_card\ 1.png);
 }
 
 .card2 {
-  background-image: url(../image/subpage_슬리데린.gif);
+  background-image: url(../image/dormitory_main/main_card\ 2.png);
 }
 
 .card3 {
-  background-image: url(../image/subpage_레번클로.gif);
+  background-image: url(../image/dormitory_main/main_card\ 3.png);
 }
 
 .card4 {
-  background-image: url(../image/subpage_후플푸프.gif);
+  background-image: url(../image/dormitory_main/main_card\ 4.png);
+}
+
+.card5 {
+  background-image: url(../image/dormitory_main/main_card\ 5.png);
+  width: 400px;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-size: cover;
+  position: absolute;
+  z-index: 3;
+}
+
+.grayed-out {
+  filter: grayscale(100%);
 }
 
 .footer a {
@@ -174,6 +198,7 @@ a {
 img {
   width: 100%;
 }
+
 section {
   width: 100vw;
   height: 100vh;
@@ -300,7 +325,7 @@ section {
 /* 모달 left */
 .swiper {
   width: 100%;
-  background-color: rgb(253, 253, 252);
+  background-color: #f2e0bd;
   height: 100%;
   border-radius: 1rem;
 }
@@ -425,7 +450,7 @@ section {
 .modal-right-first-container {
   /* border: 3px solid yellow; */
   box-shadow: 5px 5px 20px rgb(222, 217, 217);
-  background-color: #ffffff;
+  background-color: #f2e0bd;
   border-radius: 20px;
   width: 100%;
 
@@ -569,7 +594,7 @@ section {
 
 .modal-right-second-container {
   box-shadow: 5px 5px 20px rgb(222, 217, 217);
-  background-color: #ffffff;
+  background-color: #f2e0bd;
   border-radius: 20px;
   width: 100%;
   /* height: 60%; */
@@ -670,12 +695,10 @@ section {
 }
 .explain-answer-img.img_6 {
   background-image: url("../image/dormitory_explain/sub_G_explain_6.jpeg");
-
 }
 
 .explain-answer-img.img_7 {
   background-image: url("../image/그리핀도르1.png");
-
 }
 
 /* answer 슬리데린  */
@@ -696,11 +719,9 @@ section {
 }
 .explain-answer-img.img_6.S {
   background-image: url("../image/dormitory_explain/sub_S_explain_6.jpeg");
-
 }
 .explain-answer-img.img_7 S {
   background-image: url("../image/그리핀도르1.png");
-
 }
 
 /* answer 레번클로  */
@@ -741,11 +762,9 @@ section {
 }
 .explain-answer-img.img_6.H {
   background-image: url("../image/dormitory_explain/sub_H_explain_6.jpeg");
-
 }
 .explain-answer-img.img_7.H {
   background-image: url("../image/그리핀도르1.png");
-
 }
 
 .explain-answer-img-text {

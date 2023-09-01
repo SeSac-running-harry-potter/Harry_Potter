@@ -1,6 +1,28 @@
-var btn = document.querySelectorAll("div.modal-custom-button");
+var btn = document.querySelectorAll("div.card");
 var modals = document.querySelectorAll(".modal-custom");
 var spans = document.getElementsByClassName("close-modal");
+
+document.addEventListener("DOMContentLoaded", function () {
+  const images = document.querySelectorAll(".card");
+
+  images.forEach((image) => {
+    image.addEventListener("mouseenter", () => {
+      images.forEach((otherImage) => {
+        if (otherImage !== image) {
+          otherImage.classList.add("grayed-out");
+        }
+      });
+    });
+
+    image.addEventListener("mouseleave", () => {
+      images.forEach((otherImage) => {
+        if (otherImage !== image) {
+          otherImage.classList.remove("grayed-out");
+        }
+      });
+    });
+  });
+});
 
 for (var i = 0; i < btn.length; i++) {
   btn[i].onclick = function (e) {
