@@ -10,11 +10,60 @@
     />
     <!-- swiper JS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
     <link rel="stylesheet" href="../css/dormitory.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <script defer src="../js/header.js"></script>
     <script defer src="../js/dormotory.js"></script>
   </head>
   <body>
+    <!-- <section> -->
+    <div class="header">
+      <div class="logo">
+        <a href="../html/main.html">
+          <img src="../image/logo.png" alt="logo"
+        /></a>
+      </div>
+      <div class="nav_list_1">
+        <div class="item"><a href="./main.html">Main</a></div>
+        <div class="item"><a href="./book.html">News</a></div>
+        <div class="item"><a href="./characters.html">characters</a></div>
+        <div class="item"><a href="./dormitory.html">Dormitory</a></div>
+      </div>
+      <div class="title">Dormitory</div>
+    </div>
+
+    <!-- 반응형 -->
+    <div class="responsive_nav res_header_wrap">
+      <div class="hamburger">
+        <img src="../image/menu.svg" alt="hamburger" />
+      </div>
+
+      <div class="logo">
+        <a href="./main.html">
+          <img src="../image/logo.png" alt="logo" />
+        </a>
+      </div>
+    </div>
+    <div class="nav_list">
+      <ul class="gnb flex_box_col">
+        <li class="btn_close">
+          <img src="../image/close.svg" alt="" />
+        </li>
+
+        <li>
+          <a href="./main.html">Main</a>
+        </li>
+        <li>
+          <a href="./book.html">News</a>
+        </li>
+        <li><a href="./characters.html">characters</a></li>
+        <li><a href="./dormitory.html">Dormitory</a></li>
+      </ul>
+    </div>
+    <div class="overlay"></div>
+    <!-- </section> -->
+
     <section>
       <!-- <video
         id="domitory"
@@ -31,7 +80,9 @@
           <img src="../image/logo.png" alt="logo" class="logo" />
         </a>
       </div> -->
-      <div class="card_header">Dormitory</div>
+
+      <header include-html="../header.html"></header>
+      <!-- <div class="card_header">Dormitory</div> -->
 
       <!-- Trigger/Open The Modal -->
       <!-- <div class="cards_wrap">
@@ -47,24 +98,29 @@
         <div class="card card2" href="#myModal2"></div>
         <div class="card card3" href="#myModal3"></div>
         <div class="card card4" href="#myModal4"></div>
-        <div class="card card5"></div>
-      </div>
-
-      <div class="footer">
         <a
           href="https://www.idrlabs.com/kr/hogwarts-house/test.php"
           class="footer_font"
         >
-          <!-- <span class="footer-text">
+          <div class="card5"></div>
+        </a>
+      </div>
+
+      <!-- <div class="footer"> -->
+      <!-- <a
+          href="https://www.idrlabs.com/kr/hogwarts-house/test.php"
+          class="footer_font"
+        > -->
+      <!-- <span class="footer-text">
             <img
               src="../image/모자.png"
               alt=""
               style="width: 100px; align-items: center"
             />
           </span> -->
-          <span>Discover your hogwarts house</span>
-        </a>
-      </div>
+      <!-- <span>Discover your hogwarts house</span> -->
+      <!-- </a> -->
+      <!-- </div> -->
     </section>
     <!-- The Modal 1 -->
     <div id="myModal1" class="modal-custom">
@@ -786,4 +842,6 @@
       </div>
     </div>
   </body>
+
+  <script src="../includeHTML.js"></script>
 </html>
