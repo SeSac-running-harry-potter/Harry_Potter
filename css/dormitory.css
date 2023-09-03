@@ -101,9 +101,10 @@
 }
 .modal-content {
   position: relative;
-  background-color: rgb(254, 254, 254);
+  /* background-color: rgb(254, 254, 254); */
+  background-image: url("../image/dormitory_logo/bg.svg");
   margin: auto;
-  border-radius: 12px;
+
   width: 80%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-animation-name: animatetop;
@@ -300,9 +301,11 @@ section {
 /* 모달 left */
 .swiper {
   width: 100%;
-  background-color: rgb(253, 253, 252);
+  /* background-color: rgb(253, 253, 252); */
+  background-image: url("../image/dormitory_logo/bg.svg");
+  display: flex;
+  justify-content: center;
   height: 100%;
-  border-radius: 1rem;
 }
 
 .swiper .swiper-wrapper {
@@ -424,9 +427,10 @@ section {
 
 .modal-right-first-container {
   /* border: 3px solid yellow; */
-  box-shadow: 5px 5px 20px rgb(222, 217, 217);
-  background-color: #ffffff;
-  border-radius: 20px;
+  /* box-shadow: 5px 5px 20px rgb(222, 217, 217); */
+  /* background-color: #ffffff; */
+  background-image: url("../image/dormitory_logo/bg.svg");
+  /* border-radius: 20px; */
   width: 100%;
 
   padding: 1rem;
@@ -446,8 +450,8 @@ section {
 }
 
 .page-title.go {
-  color: rgb(16, 10, 127);
-  text-shadow: 5px 5px 15px rgb(19, 7, 84);
+  color: "black";
+  text-shadow: 5px 5px 15px #5f4d28;
   cursor: pointer;
 }
 
@@ -465,8 +469,8 @@ section {
 .circle_container {
   /* border: 1px solid black;  */
   box-shadow: 2px 2px 10px 2px rgb(0, 0, 0, 0.3);
-  border-radius: 1rem;
-  background-color: #ffffff;
+  /* border-radius: 1re  m; */
+  background-color: rgb(255, 255, 255, 0.3);
   padding: 0.5rem;
   display: flex;
   align-items: center;
@@ -476,7 +480,7 @@ section {
 .circle {
   width: 7vw;
   height: 7vw;
-  background: linear-gradient(45deg, #f8f001, #e815bb);
+  background: linear-gradient(45deg, #f2e0bd, #8d1415);
   border-radius: 50%;
   margin: 5px;
   display: flex;
@@ -568,9 +572,10 @@ section {
 }
 
 .modal-right-second-container {
-  box-shadow: 5px 5px 20px rgb(222, 217, 217);
-  background-color: #ffffff;
-  border-radius: 20px;
+  /* box-shadow: 5px 5px 20px rgb(222, 217, 217); */
+  /* background-color: #ffffff; */
+  background-image: url("../image/dormitory_logo/bg.svg");
+  /* border-radius: 20px; */
   width: 100%;
   /* height: 60%; */
   padding: 1rem;
@@ -586,10 +591,10 @@ section {
 }
 
 .btn {
-  background-color: #fff;
+  /* background-color: #fff; */
   color: black;
-  border: 1px solid black;
-  border-radius: 5px;
+  /* border: 1px solid black; */
+  /* border-radius: 5px; */
   width: auto;
   padding: 7px 12px;
   font-size: 1.2vw;
@@ -598,19 +603,23 @@ section {
 
 .btn:hover,
 .btn:active {
-  background-color: rgb(23, 23, 23);
-  color: rgb(239, 239, 239);
+  /* background-color: rgb(23, 23, 23); */
+  text-shadow: 5px 5px 10px rgb(0, 0, 0, 0.4);
+  /* color: rgb(239, 239, 239); */
+  color: black;
   cursor: pointer;
 }
 
 .btn.selected {
-  background-color: rgb(23, 23, 23);
-  color: rgb(239, 239, 239);
+  /* background-color: rgb(23, 23, 23); */
+  /* color: rgb(239, 239, 239); */
+  color: black;
+  font-weight: 700;
+  border-bottom: 3px solid black;
 }
 
 .explain-container {
-  /* border: 1px solid black; */
-  border-radius: 1rem;
+  background: rgb(255, 255, 255, 0.3);
   box-shadow: 0px 5px 30px rgb(82, 81, 81, 0.5);
   padding: 2rem;
   margin-top: 0.5rem;
@@ -670,12 +679,10 @@ section {
 }
 .explain-answer-img.img_6 {
   background-image: url("../image/dormitory_explain/sub_G_explain_6.jpeg");
-
 }
 
 .explain-answer-img.img_7 {
   background-image: url("../image/그리핀도르1.png");
-
 }
 
 /* answer 슬리데린  */
@@ -696,11 +703,9 @@ section {
 }
 .explain-answer-img.img_6.S {
   background-image: url("../image/dormitory_explain/sub_S_explain_6.jpeg");
-
 }
 .explain-answer-img.img_7 S {
   background-image: url("../image/그리핀도르1.png");
-
 }
 
 /* answer 레번클로  */
@@ -741,11 +746,9 @@ section {
 }
 .explain-answer-img.img_6.H {
   background-image: url("../image/dormitory_explain/sub_H_explain_6.jpeg");
-
 }
 .explain-answer-img.img_7.H {
   background-image: url("../image/그리핀도르1.png");
-
 }
 
 .explain-answer-img-text {
@@ -861,10 +864,10 @@ flex-wrap: wrap;  */
     /* border: 1px solid red; */
   }
 
-  .swiper {
-    /* width: 350px; */
+  /* .swiper {
     padding-right: 5vw;
-  }
+    background-image: url("../image/bg.svg");
+  } */
 
   .swiper .swiper-wrapper {
     display: flex;
