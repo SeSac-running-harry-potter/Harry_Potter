@@ -1,0 +1,46 @@
+@font-face {
+    font-family: "OKCHAN";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/OKCHAN.woff2")
+      format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    background-size: contain;
+    background-image: url(https://i.pinimg.com/564x/55/d1/83/55d183f50eac42fc594d684cb205243e.jpg);
+    width: 100%;
+    height: max-content;
+}
+
+.footer1{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.footer2{
+    margin: 1vw;
+    display: flex;
+    flex-wrap: wrap;
+    width: 96%;
+    align-items: center;
+    justify-content: center;
+}
+.span1{
+    color: rgb(76, 76, 76);
+    font-family: 'YUniverse-B';
+    margin:0 0.5vw 0 0.5vw;
+    font-size: 1.3vw;
+}
+.scroll{
+    display: flex;
+    align-items: center;
+    font-family: 'YUniverse-B';
+    font-size: 1.3vw;
+    position: absolute;
+    margin-right: 2vw;
+}
