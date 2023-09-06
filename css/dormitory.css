@@ -139,9 +139,10 @@ section {
 }
 .modal-content {
   position: relative;
-  background-color: rgb(254, 254, 254);
+  /* background-color: rgb(254, 254, 254); */
+  background-image: url("../image/dormitory_logo/bg.svg");
   margin: auto;
-  border-radius: 12px;
+
   width: 80%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-animation-name: animatetop;
@@ -151,7 +152,6 @@ section {
 }
 @-webkit-keyframes animatetop {
   from {
-    /* top: -300px; */
     opacity: 0;
     width: 100px;
     height: 100px;
@@ -165,7 +165,6 @@ section {
 }
 @keyframes animatetop {
   from {
-    /* top: -300px; */
     opacity: 0;
     width: 100px;
     height: 100px;
@@ -205,9 +204,6 @@ section {
 
 a {
   text-decoration: none;
-  /* color: yellow;
-  font-size: 2rem;
-  text-shadow: 10px 10px 10px black; */
 }
 img {
   width: 100%;
@@ -234,7 +230,6 @@ section {
 .logo_header {
   width: 100%;
   height: 15vh;
-  /* color: #eaeaea; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -257,12 +252,9 @@ section {
   font-family: "JeonjuSunR";
 }
 
-.footer {
+/* .footer {
   height: 15vh;
   width: 100%;
-  /* box-shadow: 0px 15px 20px #c8c8c8; */
-  /* background-color: rgb(27, 100, 164); */
-  /* position: absolute; */
   bottom: 0;
   margin: 3rem 0px;
   text-align: center;
@@ -272,7 +264,7 @@ section {
 
 .footer:hover {
   transform: scale(1.1);
-}
+} */
 
 .card-modal-content {
   text-align: center;
@@ -339,9 +331,13 @@ section {
 /* 모달 left */
 .swiper {
   width: 100%;
-  background-color: #f2e0bd;
+
+  /* background-color: rgb(253, 253, 252); */
+  background-image: url("../image/dormitory_logo/bg.svg");
+  display: flex;
+  justify-content: center;
+
   height: 100%;
-  border-radius: 1rem;
 }
 
 .swiper .swiper-wrapper {
@@ -462,11 +458,9 @@ section {
 }
 
 .modal-right-first-container {
-  /* border: 3px solid yellow; */
-  box-shadow: 5px 5px 20px rgb(222, 217, 217);
-  background-color: #f2e0bd;
-  border-radius: 20px;
-  width: 100%;
+
+  background-image: url("../image/dormitory_logo/bg.svg");
+
 
   padding: 1rem;
 }
@@ -485,27 +479,22 @@ section {
 }
 
 .page-title.go {
-  color: rgb(16, 10, 127);
-  text-shadow: 5px 5px 15px rgb(19, 7, 84);
+  color: "black";
+  text-shadow: 5px 5px 15px #5f4d28;
   cursor: pointer;
 }
 
 .circle-list {
   display: flex;
-  /* flex-wrap: wrap; */
   justify-content: space-between;
-  /* align-items: center; */
-  /* border: 2px solid red; */
   position: relative;
   width: 100%;
   height: 50%;
 }
 
 .circle_container {
-  /* border: 1px solid black;  */
   box-shadow: 2px 2px 10px 2px rgb(0, 0, 0, 0.3);
-  border-radius: 1rem;
-  background-color: #ffffff;
+  background-color: rgb(255, 255, 255, 0.3);
   padding: 0.5rem;
   display: flex;
   align-items: center;
@@ -515,7 +504,7 @@ section {
 .circle {
   width: 7vw;
   height: 7vw;
-  background: linear-gradient(45deg, #f8f001, #e815bb);
+  background: linear-gradient(45deg, #f2e0bd, #8d1415);
   border-radius: 50%;
   margin: 5px;
   display: flex;
@@ -526,13 +515,8 @@ section {
 .circle_container:active,
 .circle_container:hover {
   transform: scale(1.1);
-  /* transition: 1.5s; */
   font-weight: 700;
-  /* cursor: pointer; */
 }
-/* .circle1:active {
-  background-color: gray;
-} */
 
 .circle_line {
   width: 6vw;
@@ -607,11 +591,10 @@ section {
 }
 
 .modal-right-second-container {
-  box-shadow: 5px 5px 20px rgb(222, 217, 217);
-  background-color: #f2e0bd;
-  border-radius: 20px;
+
+  background-image: url("../image/dormitory_logo/bg.svg");
+
   width: 100%;
-  /* height: 60%; */
   padding: 1rem;
   margin-top: 0.5rem;
 }
@@ -625,10 +608,7 @@ section {
 }
 
 .btn {
-  background-color: #fff;
   color: black;
-  border: 1px solid black;
-  border-radius: 5px;
   width: auto;
   padding: 7px 12px;
   font-size: 1.2vw;
@@ -637,19 +617,21 @@ section {
 
 .btn:hover,
 .btn:active {
-  background-color: rgb(23, 23, 23);
-  color: rgb(239, 239, 239);
+  text-shadow: 5px 5px 10px rgb(0, 0, 0, 0.4);
+  color: black;
   cursor: pointer;
 }
 
 .btn.selected {
-  background-color: rgb(23, 23, 23);
-  color: rgb(239, 239, 239);
+  /* background-color: rgb(23, 23, 23); */
+  /* color: rgb(239, 239, 239); */
+  color: black;
+  font-weight: 700;
+  border-bottom: 3px solid black;
 }
 
 .explain-container {
-  /* border: 1px solid black; */
-  border-radius: 1rem;
+  background: rgb(255, 255, 255, 0.3);
   box-shadow: 0px 5px 30px rgb(82, 81, 81, 0.5);
   padding: 2rem;
   margin-top: 0.5rem;
@@ -786,14 +768,6 @@ section {
   padding-top: 0.5rem;
   word-break: keep-all;
 }
-/* 
-.modal-under {
-  width: 35vw;
-  background-color: rgb(63, 165, 42);
-  font-size: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-} */
 
 .modal-header {
   display: flex;
@@ -894,16 +868,9 @@ flex-wrap: wrap;  */
     /* border: 1px solid red; */
   }
 
-  .swiper {
-    /* width: 350px; */
-    padding-right: 5vw;
-  }
-
   .swiper .swiper-wrapper {
     display: flex;
     align-items: center;
-    /* border: 5px solid red; */
-    /* padding: 1rem; */
     width: 100%;
     height: 500px;
     padding: 1rem;
@@ -912,7 +879,6 @@ flex-wrap: wrap;  */
   .swiper .swiper-wrapper .swiper-slide {
     width: 90%;
     height: 100%;
-    /* border: 1px solid black; */
   }
 
   .footer a span {
