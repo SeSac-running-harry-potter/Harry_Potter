@@ -1,0 +1,154 @@
+/* 소개 글씨체 */
+@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;800&family=Parisienne&display=swap");
+
+/* 폰트 css */
+@font-face {
+  font-family: "JeonjuSunR";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202@1.0/JeonjuSunR.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 메인 안 Lorem 글씨체 */
+@font-face {
+  font-family: "DeogonPrincessClassic";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/DeogonPrincessClassic.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+/* 타이틀 글씨체 */
+@font-face {
+  font-family: "OKCHAN";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/OKCHAN.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-image: url(../image/characters2/background.jpg);
+  /* background-image: url(../image/dormitory_main/main_background.png); */
+  background-size: cover;
+}
+
+.main {
+  margin-top: 3%;
+  border-bottom: 3px solid black;
+}
+
+.main > .film-container {
+  width: 100%;
+  height: 600px;
+ 
+  
+}
+
+.main > .film-container > .film {
+  width: 100%;
+  height: 100%;
+  background-image: url(../image/characters2/film-container.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  
+}
+
+.main > .film-container > .film > .character-container {
+  /* height: 100%; */
+  width: 100%;
+  display: flex;
+  overflow: hidden; /* 경계를 벗어나는 부분을 자르도록 설정 */
+  position: relative;
+  
+}
+
+.main > .film-container > .film > .character-container > .img1 {
+  width: 28%;
+  height: 28%;
+  margin-left: 11.4%;
+  margin-top: 2.2%;
+}
+
+
+
+.main > .film-container > .film > .character-container > .introduce {
+  
+  width: 35%;
+  text-align: center;
+  /* margin: 0 auto; */
+ margin-top: 5%;
+ margin-left: 15%;
+  font-size: 100px;
+  word-wrap: break-word; /* 텍스트 줄 바꿈 허용 */
+  
+}
+
+.main > .film-container > .film > .character-container > .introduce > .content {
+  
+ 
+
+  
+}
+
+.main > .film-container > .film > .character-container > .introduce > .content > .name {
+  font-family: "Abhaya Libre", serif;
+  font-weight: 800;
+  font-size: 3vw
+  
+}
+
+.main > .film-container > .film > .character-container > .introduce > .content > .name-line {
+  background-color: black;
+  width: 25%;
+  height: 1px;
+  margin: 0 auto;
+  margin-top: 2%;
+}
+
+.main > .film-container > .film > .character-container > .introduce > .content > .about {
+  font-family: "Abhaya Libre", serif;
+  font-size: 1.6vw;
+  margin-top: 5%;
+}
+
+.main > .film-container > .film > .character-container > .introduce > .content > .quotation-marks1 {
+  font-size: 1vw;
+  margin-top: 4%;
+}
+
+.main > .film-container > .film > .character-container > .introduce > .content > .quotes {
+  font-family: "Parisienne", cursive;
+  font-size: 1.5vw;
+  margin: 3%
+} 
+
+.main > .film-container > .film > .character-container > .introduce > .content > .quotation-marks2 {
+  font-size: 1vw;
+}
+
+.main > .film-container > .film > .character-container > .img2 {
+  width: 28%;
+  height: 28%;
+  margin-top: 2.2%;
+  filter: grayscale(100%);
+  transform: translateX(68%); 
+}
+
+/* @media screen and (max-width: 768px) {
+  .main > .film-container {
+    width: 100%;
+    height: 300px;
+  }
+}
