@@ -114,7 +114,6 @@
 }
 @-webkit-keyframes animatetop {
   from {
-    /* top: -300px; */
     opacity: 0;
     width: 100px;
     height: 100px;
@@ -128,7 +127,6 @@
 }
 @keyframes animatetop {
   from {
-    /* top: -300px; */
     opacity: 0;
     width: 100px;
     height: 100px;
@@ -168,9 +166,6 @@
 
 a {
   text-decoration: none;
-  /* color: yellow;
-  font-size: 2rem;
-  text-shadow: 10px 10px 10px black; */
 }
 img {
   width: 100%;
@@ -196,7 +191,6 @@ section {
 .logo_header {
   width: 100%;
   height: 15vh;
-  /* color: #eaeaea; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -219,12 +213,9 @@ section {
   font-family: "JeonjuSunR";
 }
 
-.footer {
+/* .footer {
   height: 15vh;
   width: 100%;
-  /* box-shadow: 0px 15px 20px #c8c8c8; */
-  /* background-color: rgb(27, 100, 164); */
-  /* position: absolute; */
   bottom: 0;
   margin: 3rem 0px;
   text-align: center;
@@ -234,7 +225,7 @@ section {
 
 .footer:hover {
   transform: scale(1.1);
-}
+} */
 
 .card-modal-content {
   text-align: center;
@@ -426,11 +417,7 @@ section {
 }
 
 .modal-right-first-container {
-  /* border: 3px solid yellow; */
-  /* box-shadow: 5px 5px 20px rgb(222, 217, 217); */
-  /* background-color: #ffffff; */
   background-image: url("../image/dormitory_logo/bg.svg");
-  /* border-radius: 20px; */
   width: 100%;
 
   padding: 1rem;
@@ -457,19 +444,14 @@ section {
 
 .circle-list {
   display: flex;
-  /* flex-wrap: wrap; */
   justify-content: space-between;
-  /* align-items: center; */
-  /* border: 2px solid red; */
   position: relative;
   width: 100%;
   height: 50%;
 }
 
 .circle_container {
-  /* border: 1px solid black;  */
   box-shadow: 2px 2px 10px 2px rgb(0, 0, 0, 0.3);
-  /* border-radius: 1re  m; */
   background-color: rgb(255, 255, 255, 0.3);
   padding: 0.5rem;
   display: flex;
@@ -491,13 +473,8 @@ section {
 .circle_container:active,
 .circle_container:hover {
   transform: scale(1.1);
-  /* transition: 1.5s; */
   font-weight: 700;
-  /* cursor: pointer; */
 }
-/* .circle1:active {
-  background-color: gray;
-} */
 
 .circle_line {
   width: 6vw;
@@ -572,12 +549,8 @@ section {
 }
 
 .modal-right-second-container {
-  /* box-shadow: 5px 5px 20px rgb(222, 217, 217); */
-  /* background-color: #ffffff; */
   background-image: url("../image/dormitory_logo/bg.svg");
-  /* border-radius: 20px; */
   width: 100%;
-  /* height: 60%; */
   padding: 1rem;
   margin-top: 0.5rem;
 }
@@ -591,10 +564,7 @@ section {
 }
 
 .btn {
-  /* background-color: #fff; */
   color: black;
-  /* border: 1px solid black; */
-  /* border-radius: 5px; */
   width: auto;
   padding: 7px 12px;
   font-size: 1.2vw;
@@ -603,9 +573,7 @@ section {
 
 .btn:hover,
 .btn:active {
-  /* background-color: rgb(23, 23, 23); */
   text-shadow: 5px 5px 10px rgb(0, 0, 0, 0.4);
-  /* color: rgb(239, 239, 239); */
   color: black;
   cursor: pointer;
 }
@@ -756,14 +724,6 @@ section {
   padding-top: 0.5rem;
   word-break: keep-all;
 }
-/* 
-.modal-under {
-  width: 35vw;
-  background-color: rgb(63, 165, 42);
-  font-size: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-} */
 
 .modal-header {
   display: flex;
@@ -864,16 +824,9 @@ flex-wrap: wrap;  */
     /* border: 1px solid red; */
   }
 
-  /* .swiper {
-    padding-right: 5vw;
-    background-image: url("../image/bg.svg");
-  } */
-
   .swiper .swiper-wrapper {
     display: flex;
     align-items: center;
-    /* border: 5px solid red; */
-    /* padding: 1rem; */
     width: 100%;
     height: 500px;
     padding: 1rem;
@@ -882,7 +835,6 @@ flex-wrap: wrap;  */
   .swiper .swiper-wrapper .swiper-slide {
     width: 90%;
     height: 100%;
-    /* border: 1px solid black; */
   }
 
   .footer a span {
